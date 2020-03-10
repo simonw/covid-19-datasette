@@ -29,8 +29,40 @@ def load_daily_reports():
                     "confirmed": int(row["Confirmed"] or 0),
                     "deaths": int(row["Deaths"] or 0),
                     "recovered": int(row["Recovered"] or 0),
+                    "latitude": row.get("Latitude") or None,
+                    "longitude": row.get("Longitude") or None,
                     "last_update": row["Last Update"],
                 }
+
+
+def add_missing_latitude_longitude(db):
+    # Some rows are missing a latitude/longitude, try to backfill those
+    with db.conn:
+        for row in db.conn.execute(
+            """
+            select
+                country_or_region, province_or_state,
+                max(latitude), max(longitude)
+            from
+                daily_reports
+            where
+                latitude is not null
+            group by
+                country_or_region, province_or_state
+        """
+        ).fetchall():
+            print(row)
+            country_or_region, province_or_state, latitude, longitude = row
+            db.conn.execute(
+                """
+                update daily_reports
+                set latitude = ?, longitude = ?
+                where country_or_region = ?
+                and province_or_state = ?
+                and latitude is null
+            """,
+                [latitude, longitude, country_or_region, province_or_state],
+            )
 
 
 if __name__ == "__main__":
@@ -40,3 +72,4 @@ if __name__ == "__main__":
     if table.exists():
         table.drop()
     table.insert_all(load_daily_reports())
+    add_missing_latitude_longitude(db)
