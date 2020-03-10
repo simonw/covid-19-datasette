@@ -48,7 +48,9 @@ jobs:
     - name: Deploy to Cloud Run
       if: steps.decide_variables.outputs.latest != steps.decide_variables.outputs.deployed
       run: |-
-        gcloud components install beta
         gcloud config set run/region us-central1
         gcloud config set project datasette-222320
-        datasette publish cloudrun covid.db --service covid-19 -m metadata.json
+        datasette publish cloudrun covid.db \
+          --service covid-19 \
+          -m metadata.json \
+          --install=datasette-vega
