@@ -3,10 +3,13 @@
     "source": "Johns Hopkins CSSE",
     "source_url": "https://github.com/CSSEGISandData/COVID-19",
     "about_url": "https://github.com/simonw/covid-19-datasette",
+    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data</div>",
     "databases": {
         "covid": {
+            "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data</div>",
             "tables": {
                 "daily_reports": {
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data</div>",
                     "facets": ["province_or_state", "country_or_region"]
                 }
             }
