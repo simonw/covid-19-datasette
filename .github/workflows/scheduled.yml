@@ -1,0 +1,54 @@
+name: Fetch latest data and deploy with Datasette
+
+on:
+  repository_dispatch:
+  schedule:
+    - cron:  '0 * * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out corvid-19-datasette
+      uses: actions/checkout@v2
+    - name: Check out CSSEGISandData/COVID-19
+      uses: actions/checkout@v2
+      with:
+        repository: CSSEGISandData/COVID-19
+        path: COVID-19
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - uses: actions/cache@v1
+      name: Configure pip caching
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Build covid.db database
+      run: python build_database.py
+    - name: Set variables to decide if we should deploy
+      id: decide_variables
+      run: |-
+        echo "##[set-output name=latest;]$(datasette inspect covid.db | jq '.covid.hash' -r)"
+        echo "##[set-output name=deployed;]$(curl -s https://covid-19.datasettes.com/-/databases.json | jq '.[0].hash' -r)"
+    - name: Set up Cloud Run
+      if: steps.decide_variables.outputs.latest != steps.decide_variables.outputs.deployed
+      uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        version: '275.0.0'
+        service_account_email: ${{ secrets.GCP_SA_EMAIL }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+    - name: Deploy to Cloud Run
+      if: steps.decide_variables.outputs.latest != steps.decide_variables.outputs.deployed
+      run: |-
+        gcloud components install beta
+        gcloud config set run/region us-central1
+        gcloud config set project datasette-222320
+        datasette publish cloudrun covid.db --service covid-19 -m metadata.json

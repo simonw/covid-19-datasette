@@ -1,0 +1,15 @@
+{
+    "title": "COVID-19 cases, using data from Johns Hopkins CSSE",
+    "source": "Johns Hopkins CSSE",
+    "source_url": "https://github.com/CSSEGISandData/COVID-19",
+    "about_url": "https://github.com/simonw/covid-19-datasette",
+    "databases": {
+        "covid": {
+            "tables": {
+                "daily_reports": {
+                    "facets": ["province_or_state", "country_or_region"]
+                }
+            }
+        }
+    }
+}
