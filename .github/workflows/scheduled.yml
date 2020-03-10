@@ -1,6 +1,7 @@
 name: Fetch latest data and deploy with Datasette
 
 on:
+  push:
   repository_dispatch:
   schedule:
     - cron:  '0 * * * *'
