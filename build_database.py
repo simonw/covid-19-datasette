@@ -24,8 +24,8 @@ def load_daily_reports():
                     province_or_state = row["Province/State"]
                 yield {
                     "day": day,
-                    "country_or_region": row["Country/Region"],
-                    "province_or_state": province_or_state,
+                    "country_or_region": row["Country/Region"].strip(),
+                    "province_or_state": province_or_state.strip() if province_or_state else None,
                     "confirmed": int(row["Confirmed"] or 0),
                     "deaths": int(row["Deaths"] or 0),
                     "recovered": int(row["Recovered"] or 0),
@@ -51,7 +51,6 @@ def add_missing_latitude_longitude(db):
                 country_or_region, province_or_state
         """
         ).fetchall():
-            print(row)
             country_or_region, province_or_state, latitude, longitude = row
             db.conn.execute(
                 """
