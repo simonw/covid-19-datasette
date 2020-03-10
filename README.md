@@ -12,6 +12,8 @@ The [build script for the database](https://github.com/simonw/covid-19-datasette
 
 If you are going to make use of those columns, make sure you understand how that backfill mechanism works in case it affects your calculations in some way.
 
+This repository uses the deployment pattern described in [Deploying a data API using GitHub Actions and Cloud Run](https://simonwillison.net/2020/Jan/21/github-actions-cloud-run/).
+
 ## Example issues
 
 * Some countries (like Italy) are represented by [just the rows](https://covid-19.datasettes.com/covid/daily_reports?country_or_region=Italy&_sort_desc=confirmed#g.mark=bar&g.x_column=day&g.x_type=ordinal&g.y_column=confirmed&g.y_type=quantitative) with `country_or_region` set to `Italy` (and `province_or_state` set to `null`). Larger countries such as the United States have multiple rows for each day divided into separate `province_or_state` values - [example](https://covid-19.datasettes.com/covid/daily_reports?_size=1000&country_or_region__exact=US&_sort_desc=day#g.mark=bar&g.x_column=day&g.x_type=ordinal&g.y_column=confirmed&g.y_type=quantitative&g.color_column=province_or_state).
