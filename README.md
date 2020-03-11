@@ -14,6 +14,8 @@ The [build script for the database](https://github.com/simonw/covid-19-datasette
 
 If you are going to make use of those columns, make sure you understand how that backfill mechanism works in case it affects your calculations in some way.
 
+More about this project: [COVID-19 numbers in Datasette](https://simonwillison.net/2020/Mar/11/covid-19/).
+
 This repository uses the deployment pattern described in [Deploying a data API using GitHub Actions and Cloud Run](https://simonwillison.net/2020/Jan/21/github-actions-cloud-run/).
 
 ## Example issues
