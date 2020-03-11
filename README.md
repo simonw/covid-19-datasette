@@ -8,6 +8,8 @@ Please **do not** use this tool to share information about COVID-19 without maki
 
 The database is built from the daily report CSV files in the Johns Hopkins CSSE `csse_covid_19_data` folder - be sure to consult [their README](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data) for documentation of the fields.
 
+They are actively making changes to how they report data. You should [follow their issues](https://github.com/CSSEGISandData/COVID-19/issues) closely for updates - for example [this issue](https://github.com/CSSEGISandData/COVID-19/issues/382) about switching from reporting USA data at the county to the state level.
+
 The [build script for the database](https://github.com/simonw/covid-19-datasette/blob/master/build_database.py) makes one alteration to the data: it attempts to fill any missing  `latitude` and `longitude` columns with values from similar rows.
 
 If you are going to make use of those columns, make sure you understand how that backfill mechanism works in case it affects your calculations in some way.
