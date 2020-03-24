@@ -1,6 +1,6 @@
 # covid-19-datasette
 
-![Fetch latest data and deploy with Datasette](https://github.com/simonw/covid-19-datasette/workflows/Fetch%20latest%20data%20and%20deploy%20with%20Datasette/badge.svg)
+[![Fetch latest data and deploy with Datasette](https://github.com/simonw/covid-19-datasette/workflows/Fetch%20latest%20data%20and%20deploy%20with%20Datasette/badge.svg)](https://github.com/simonw/covid-19-datasette/actions?query=workflow%3A%22Fetch+latest+data+and+deploy+with+Datasette%22)
 
 Deploys a Datasette instance with data from https://github.com/CSSEGISandData/COVID-19
 
