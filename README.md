@@ -1,5 +1,7 @@
 # covid-19-datasette
 
+![Fetch latest data and deploy with Datasette](https://github.com/simonw/covid-19-datasette/workflows/Fetch%20latest%20data%20and%20deploy%20with%20Datasette/badge.svg)
+
 Deploys a Datasette instance with data from https://github.com/CSSEGISandData/COVID-19
 
 The Datasette instance lives at https://covid-19.datasettes.com/ and is updated hourly.
