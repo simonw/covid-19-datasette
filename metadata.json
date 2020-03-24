@@ -9,6 +9,7 @@
             "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://link.medium.com/fOScH1HUN4'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
             "tables": {
                 "daily_reports": {
+                    "sort_desc": "day",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://link.medium.com/fOScH1HUN4'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": ["province_or_state", "country_or_region"]
                 }
