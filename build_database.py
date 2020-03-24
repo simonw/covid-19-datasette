@@ -18,20 +18,22 @@ def load_daily_reports():
         with filepath.open() as fp:
             for row in csv.DictReader(fp):
                 # Weirdly, this column is sometimes \ufeffProvince/State
-                if "\ufeffProvince/State" in row:
-                    province_or_state = row["\ufeffProvince/State"]
-                else:
-                    province_or_state = row["Province/State"]
+                province_or_state = row.get("\ufeffProvince/State") or row.get("Province/State") or row.get("Province_State") or None
+                country_or_region = row.get("Country_Region") or row.get("Country/Region")
                 yield {
                     "day": day,
-                    "country_or_region": row["Country/Region"].strip(),
+                    "country_or_region": country_or_region.strip() if country_or_region else None,
                     "province_or_state": province_or_state.strip() if province_or_state else None,
+                    "admin2": province_or_state.strip() if province_or_state else None,
+                    "fips": row.get("FIPS", "").strip() or None,
                     "confirmed": int(row["Confirmed"] or 0),
                     "deaths": int(row["Deaths"] or 0),
                     "recovered": int(row["Recovered"] or 0),
-                    "latitude": row.get("Latitude") or None,
-                    "longitude": row.get("Longitude") or None,
-                    "last_update": row["Last Update"],
+                    "active": int(row["Active"]) if row.get("Active") else None,
+                    "latitude": row.get("Latitude") or row.get("Lat") or None,
+                    "longitude": row.get("Longitude") or row.get("Long_") or None,
+                    "last_update": row.get("Last Update") or row.get("Last_Update") or None,
+                    "combined_key": row.get("Combined_Key") or None,
                 }
 
 
