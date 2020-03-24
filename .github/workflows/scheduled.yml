@@ -54,4 +54,5 @@ jobs:
         datasette publish cloudrun covid.db \
           --service covid-19 \
           -m metadata.json \
-          --install=datasette-vega
+          --install=datasette-vega \
+          --branch=a498d0fe6590f9bdbc4faf9e0dd5faeb3b06002c
