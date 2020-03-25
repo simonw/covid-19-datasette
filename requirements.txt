@@ -1,5 +1,2 @@
-# Datasette with metadata sort order feature - replace this
-# with Datasette 0.39 once that version ships
-# https://github.com/simonw/datasette/issues/702
-https://github.com/simonw/datasette/archive/a498d0fe6590f9bdbc4faf9e0dd5faeb3b06002c.zip
+datasette>=0.39
 sqlite-utils
