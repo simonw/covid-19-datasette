@@ -24,7 +24,7 @@ def load_daily_reports():
                     "day": day,
                     "country_or_region": country_or_region.strip() if country_or_region else None,
                     "province_or_state": province_or_state.strip() if province_or_state else None,
-                    "admin2": row.get("admin2") or None,
+                    "admin2": row.get("Admin2") or None,
                     "fips": row.get("FIPS", "").strip() or None,
                     "confirmed": int(row["Confirmed"] or 0),
                     "deaths": int(row["Deaths"] or 0),
