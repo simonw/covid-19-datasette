@@ -3,12 +3,13 @@ import sqlite_utils
 import csv
 
 base_path = (Path(__file__) / "..").resolve()
-covid_base = base_path / "COVID-19"
+jhu_csse_base = base_path / "COVID-19"
+nytimes_base = base_path / "covid-19-data"
 
 
 def load_daily_reports():
     daily_reports = list(
-        (covid_base / "csse_covid_19_data" / "csse_covid_19_daily_reports").glob(
+        (jhu_csse_base / "csse_covid_19_data" / "csse_covid_19_daily_reports").glob(
             "*.csv"
         )
     )
@@ -66,11 +67,28 @@ def add_missing_latitude_longitude(db):
             )
 
 
+def load_csv(filepath):
+    with filepath.open() as fp:
+        yield from csv.DictReader(fp)
+
+
 if __name__ == "__main__":
     db = sqlite_utils.Database(base_path / "covid.db")
-    # Drop table if it exists
+
+    # Load John Hopkins CSSE daily reports
     table = db["daily_reports"]
     if table.exists():
         table.drop()
     table.insert_all(load_daily_reports())
     add_missing_latitude_longitude(db)
+
+    # Now do the NYTimes data
+    nyt_counties = db["ny_times_us_counties"]
+    if nyt_counties.exists():
+        nyt_counties.drop()
+    nyt_counties.insert_all(load_csv(nytimes_base / "us-counties.csv"))
+
+    nyt_states = db["ny_times_us_states"]
+    if nyt_states.exists():
+        nyt_states.drop()
+    nyt_states.insert_all(load_csv(nytimes_base / "us-states.csv"))

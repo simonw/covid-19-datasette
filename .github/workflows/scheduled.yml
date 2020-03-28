@@ -17,6 +17,11 @@ jobs:
       with:
         repository: CSSEGISandData/COVID-19
         path: COVID-19
+    - name: Check out nytimes/covid-19-data
+      uses: actions/checkout@v2
+      with:
+        repository: nytimes/covid-19-data
+        path: covid-19-data
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
