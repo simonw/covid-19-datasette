@@ -29,6 +29,8 @@ If you are going to make use of those columns, make sure you understand how that
 
 The New York Times has [a comprehensive README](https://github.com/nytimes/covid-19-data/blob/master/README.md) describing how their data is sourced. You should read it! They announced their data in [We’re Sharing Coronavirus Case Data for Every U.S. County](https://www.nytimes.com/article/coronavirus-county-data-us.html).
 
+They are using the data for their [Coronavirus in the U.S.: Latest Map and Case Count](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html) article.
+
 ## Example issues
 
 * On the 23rd March 2020 Johns Hopkins [added four new columns](https://github.com/CSSEGISandData/COVID-19/commit/e748b6d8a55e4a88371af56b129ababe1712522d) to the daily CSV file: `admin2`, `fips`, `active` and `combined_key`. These are not present in older CSV files. [#4](https://github.com/simonw/covid-19-datasette/issues/4).
