@@ -25,7 +25,7 @@
                 "ny_times_us_counties": {
                     "sort_desc": "date",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://link.medium.com/fOScH1HUN4'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
-                    "facets": ["state"],
+                    "facets": ["state", "county", "fips"],
                     "source": "The New York Times",
                     "source_url": "https://github.com/nytimes/covid-19-data",
                     "license": "LICENSE",
