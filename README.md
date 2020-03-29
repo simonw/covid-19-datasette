@@ -11,7 +11,7 @@ The Datasette instance lives at https://covid-19.datasettes.com/ and is updated 
 
 Please **do not** use this tool to share information about COVID-19 without making absolutely sure you understand how the data is structured and sourced.
 
-More about this project: [COVID-19 numbers in Datasette](https://simonwillison.net/2020/Mar/11/covid-19/).
+More about this project on my blog: [COVID-19 numbers in Datasette](https://simonwillison.net/2020/Mar/11/covid-19/).
 
 This repository uses the deployment pattern described in [Deploying a data API using GitHub Actions and Cloud Run](https://simonwillison.net/2020/Jan/21/github-actions-cloud-run/).
 
