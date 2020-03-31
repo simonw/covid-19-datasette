@@ -69,7 +69,11 @@ def add_missing_latitude_longitude(db):
 
 def load_csv(filepath):
     with filepath.open() as fp:
-        yield from csv.DictReader(fp)
+        for row in csv.DictReader(fp):
+            for key in row:
+                if row[key].isdigit():
+                    row[key] = int(row[key])
+            yield row
 
 
 if __name__ == "__main__":
