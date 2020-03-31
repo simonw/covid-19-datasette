@@ -7,7 +7,7 @@
         "covid": {
             "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
             "tables": {
-                "daily_reports": {
+                "johns_hopkins_csse_daily_reports": {
                     "sort_desc": "day",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": ["province_or_state", "country_or_region"],
@@ -31,6 +31,14 @@
                     "source_url": "https://github.com/nytimes/covid-19-data",
                     "license": "LICENSE",
                     "license_url": "https://github.com/nytimes/covid-19-data/blob/master/LICENSE"
+                },
+                "daily_reports": {
+                    "hidden": true,
+                    "sort_desc": "day",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ This table has been renamed. Use <a href='/covid/johns_hopkins_csse_daily_reports'>johns_hopkins_csse_daily_reports</a> instead.</div>",
+                    "facets": ["province_or_state", "country_or_region"],
+                    "source": "Johns Hopkins CSSE",
+                    "source_url": "https://github.com/CSSEGISandData/COVID-19"
                 }
             }
         }

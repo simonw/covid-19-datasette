@@ -19,12 +19,23 @@ def load_daily_reports():
         with filepath.open() as fp:
             for row in csv.DictReader(fp):
                 # Weirdly, this column is sometimes \ufeffProvince/State
-                province_or_state = row.get("\ufeffProvince/State") or row.get("Province/State") or row.get("Province_State") or None
-                country_or_region = row.get("Country_Region") or row.get("Country/Region")
+                province_or_state = (
+                    row.get("\ufeffProvince/State")
+                    or row.get("Province/State")
+                    or row.get("Province_State")
+                    or None
+                )
+                country_or_region = row.get("Country_Region") or row.get(
+                    "Country/Region"
+                )
                 yield {
                     "day": day,
-                    "country_or_region": country_or_region.strip() if country_or_region else None,
-                    "province_or_state": province_or_state.strip() if province_or_state else None,
+                    "country_or_region": country_or_region.strip()
+                    if country_or_region
+                    else None,
+                    "province_or_state": province_or_state.strip()
+                    if province_or_state
+                    else None,
                     "admin2": row.get("Admin2") or None,
                     "fips": row.get("FIPS", "").strip() or None,
                     "confirmed": int(row["Confirmed"] or 0),
@@ -33,7 +44,9 @@ def load_daily_reports():
                     "active": int(row["Active"]) if row.get("Active") else None,
                     "latitude": row.get("Latitude") or row.get("Lat") or None,
                     "longitude": row.get("Longitude") or row.get("Long_") or None,
-                    "last_update": row.get("Last Update") or row.get("Last_Update") or None,
+                    "last_update": row.get("Last Update")
+                    or row.get("Last_Update")
+                    or None,
                     "combined_key": row.get("Combined_Key") or None,
                 }
 
@@ -80,11 +93,20 @@ if __name__ == "__main__":
     db = sqlite_utils.Database(base_path / "covid.db")
 
     # Load John Hopkins CSSE daily reports
-    table = db["daily_reports"]
+    table = db["johns_hopkins_csse_daily_reports"]
     if table.exists():
         table.drop()
     table.insert_all(load_daily_reports())
     add_missing_latitude_longitude(db)
+
+    # Add a view with the old name
+    if "daily_reports" in db.table_names():
+        db["daily_reports"].drop()
+
+    if "daily_reports" not in db.view_names():
+        db.create_view(
+            "daily_reports", "select * from johns_hopkins_csse_daily_reports"
+        )
 
     # Now do the NYTimes data
     nyt_counties = db["ny_times_us_counties"]
