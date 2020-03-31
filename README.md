@@ -9,7 +9,7 @@ Deploys a Datasette instance with data from the following sources:
 
 The Datasette instance lives at https://covid-19.datasettes.com/ and is updated every two hours using [a scheduled GitHub Action](https://github.com/simonw/covid-19-datasette/blob/master/.github/workflows/scheduled.yml).
 
-Please **do not** use this tool to share information about COVID-19 without making absolutely sure you understand how the data is structured and sourced.
+Please **do not** use this tool to share information about COVID-19 without making absolutely sure you understand how the data is structured and sourced. Review [Ten Considerations Before You Create Another Chart About COVID-19](https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8).
 
 More about this project on my blog: [COVID-19 numbers in Datasette](https://simonwillison.net/2020/Mar/11/covid-19/).
 
