@@ -60,7 +60,7 @@ def add_missing_latitude_longitude(db):
                 country_or_region, province_or_state,
                 max(latitude), max(longitude)
             from
-                daily_reports
+                johns_hopkins_csse_daily_reports
             where
                 latitude is not null
             group by
@@ -70,7 +70,7 @@ def add_missing_latitude_longitude(db):
             country_or_region, province_or_state, latitude, longitude = row
             db.conn.execute(
                 """
-                update daily_reports
+                update johns_hopkins_csse_daily_reports
                 set latitude = ?, longitude = ?
                 where country_or_region = ?
                 and province_or_state = ?
