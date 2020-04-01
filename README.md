@@ -7,7 +7,7 @@ Deploys a Datasette instance with data from the following sources:
 * [CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19) by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)
 * [nytimes/covid-19-data](https://github.com/nytimes/covid-19-data) by The New York Times
 
-The Datasette instance lives at https://covid-19.datasettes.com/ and is updated every two hours using [a scheduled GitHub Action](https://github.com/simonw/covid-19-datasette/blob/master/.github/workflows/scheduled.yml).
+The Datasette instance lives at https://covid-19.datasettes.com/ and is updated hourly using [a scheduled GitHub Action](https://github.com/simonw/covid-19-datasette/blob/master/.github/workflows/scheduled.yml).
 
 More about this project on my blog: [COVID-19 numbers in Datasette](https://simonwillison.net/2020/Mar/11/covid-19/).
 
