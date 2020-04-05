@@ -118,3 +118,9 @@ if __name__ == "__main__":
     if nyt_states.exists():
         nyt_states.drop()
     nyt_states.insert_all(load_csv(nytimes_base / "us-states.csv"))
+
+    # And the US censes data
+    if "us_census_state_populations_2019" not in db.table_names():
+        db["us_census_state_populations_2019"].insert_all(
+            load_csv(base_path / "us_census_state_populations_2019.csv")
+        )

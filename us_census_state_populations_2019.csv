@@ -1,0 +1,58 @@
+region_id,division_id,state_id,state_name,pop_estimate_2019
+0,0,0,United States,328239523
+1,0,0,Northeast Region,55982803
+2,0,0,Midwest Region,68329004
+3,0,0,South Region,125580448
+4,0,0,West Region,78347268
+3,6,1,Alabama,4903185
+4,9,2,Alaska,731545
+4,8,4,Arizona,7278717
+3,7,5,Arkansas,3017804
+4,9,6,California,39512223
+4,8,8,Colorado,5758736
+1,1,9,Connecticut,3565287
+3,5,10,Delaware,973764
+3,5,11,District of Columbia,705749
+3,5,12,Florida,21477737
+3,5,13,Georgia,10617423
+4,9,15,Hawaii,1415872
+4,8,16,Idaho,1787065
+2,3,17,Illinois,12671821
+2,3,18,Indiana,6732219
+2,4,19,Iowa,3155070
+2,4,20,Kansas,2913314
+3,6,21,Kentucky,4467673
+3,7,22,Louisiana,4648794
+1,1,23,Maine,1344212
+3,5,24,Maryland,6045680
+1,1,25,Massachusetts,6892503
+2,3,26,Michigan,9986857
+2,4,27,Minnesota,5639632
+3,6,28,Mississippi,2976149
+2,4,29,Missouri,6137428
+4,8,30,Montana,1068778
+2,4,31,Nebraska,1934408
+4,8,32,Nevada,3080156
+1,1,33,New Hampshire,1359711
+1,2,34,New Jersey,8882190
+4,8,35,New Mexico,2096829
+1,2,36,New York,19453561
+3,5,37,North Carolina,10488084
+2,4,38,North Dakota,762062
+2,3,39,Ohio,11689100
+3,7,40,Oklahoma,3956971
+4,9,41,Oregon,4217737
+1,2,42,Pennsylvania,12801989
+1,1,44,Rhode Island,1059361
+3,5,45,South Carolina,5148714
+2,4,46,South Dakota,884659
+3,6,47,Tennessee,6829174
+3,7,48,Texas,28995881
+4,8,49,Utah,3205958
+1,1,50,Vermont,623989
+3,5,51,Virginia,8535519
+4,9,53,Washington,7614893
+3,5,54,West Virginia,1792147
+2,3,55,Wisconsin,5822434
+4,8,56,Wyoming,578759
+,,72,Puerto Rico,3193694

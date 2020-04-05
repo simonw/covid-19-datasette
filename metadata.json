@@ -32,6 +32,10 @@
                     "license": "LICENSE",
                     "license_url": "https://github.com/nytimes/covid-19-data/blob/master/LICENSE"
                 },
+                "us_census_state_populations_2019": {
+                    "source": "census.gov",
+                    "source_url": "https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html"
+                },
                 "daily_reports": {
                     "hidden": true,
                     "sort_desc": "day",
