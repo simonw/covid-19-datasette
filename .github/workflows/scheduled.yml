@@ -22,6 +22,11 @@ jobs:
       with:
         repository: nytimes/covid-19-data
         path: covid-19-data
+    - name: Check out LA Times datadesk/california-coronavirus-data
+      uses: actions/checkout@v2
+      with:
+        repository: datadesk/california-coronavirus-data
+        path: california-coronavirus-data
     - name: Set up Python
       uses: actions/setup-python@v1
       with:

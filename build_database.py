@@ -5,6 +5,17 @@ import csv
 base_path = (Path(__file__) / "..").resolve()
 jhu_csse_base = base_path / "COVID-19"
 nytimes_base = base_path / "covid-19-data"
+latimes_base = base_path / "california-coronavirus-data"
+
+EXTRA_CSVS = [
+    # file_path, table_name
+    (nytimes_base / "us-counties.csv", "ny_times_us_counties"),
+    (nytimes_base / "us-states.csv", "ny_times_us_states"),
+    (latimes_base / "latimes-agency-totals.csv", "latimes_agency_totals"),
+    (latimes_base / "latimes-county-totals.csv", "latimes_county_totals"),
+    (latimes_base / "latimes-place-totals.csv", "latimes_place_totals"),
+    (latimes_base / "latimes-state-totals.csv", "latimes_state_totals"),
+]
 
 
 def load_daily_reports():
@@ -108,16 +119,12 @@ if __name__ == "__main__":
             "daily_reports", "select * from johns_hopkins_csse_daily_reports"
         )
 
-    # Now do the NYTimes data
-    nyt_counties = db["ny_times_us_counties"]
-    if nyt_counties.exists():
-        nyt_counties.drop()
-    nyt_counties.insert_all(load_csv(nytimes_base / "us-counties.csv"))
-
-    nyt_states = db["ny_times_us_states"]
-    if nyt_states.exists():
-        nyt_states.drop()
-    nyt_states.insert_all(load_csv(nytimes_base / "us-states.csv"))
+    # Now do the NYTimes and LA times data
+    for csv_path, table_name in EXTRA_CSVS:
+        table = db[table_name]
+        if table.exists():
+            table.drop()
+        table.insert_all(load_csv(csv_path))
 
     # And the US censes data
     if "us_census_state_populations_2019" not in db.table_names():
