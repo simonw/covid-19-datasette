@@ -43,6 +43,8 @@ They are using the data for their [Coronavirus in the U.S.: Latest Map and Case 
 
 The Los Angeles Time [comprehensive README](https://github.com/datadesk/california-coronavirus-data/blob/master/README.md) describes the data in the [latimes_agency_totals](https://covid-19.datasettes.com/covid/latimes_agency_totals), [latimes_county_totals](https://covid-19.datasettes.com/covid/latimes_county_totals), [latimes_place_totals](https://covid-19.datasettes.com/covid/latimes_place_totals) and [latimes_state_totals](https://covid-19.datasettes.com/covid/latimes_state_totals) tables.
 
+See [To aid coronavirus fight, The Times releases database of California cases](https://www.latimes.com/california/story/2020-04-06/coronavirus-fight-la-times-releases-its-california-cases-database) for background on the release of this data.
+
 The data is used for their [Tracking coronavirus in California](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/) page, which is constantly updated.
 
 ## Example issues
