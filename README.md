@@ -6,6 +6,7 @@ Deploys a Datasette instance with data from the following sources:
 
 * [CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19) by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)
 * [nytimes/covid-19-data](https://github.com/nytimes/covid-19-data) by The New York Times
+* [datadesk/california-coronavirus-data](https://github.com/datadesk/california-coronavirus-data) by The Los Angeles Times
 
 The Datasette instance lives at https://covid-19.datasettes.com/ and is updated hourly using [a scheduled GitHub Action](https://github.com/simonw/covid-19-datasette/blob/master/.github/workflows/scheduled.yml).
 
@@ -32,11 +33,17 @@ The [build script for the database](https://github.com/simonw/covid-19-datasette
 
 If you are going to make use of those columns, make sure you understand how that backfill mechanism works in case it affects your calculations in some way.
 
-## New York Times
+## The New York Times
 
 The New York Times has [a comprehensive README](https://github.com/nytimes/covid-19-data/blob/master/README.md) describing how their data is sourced. You should read it! They announced their data in [We’re Sharing Coronavirus Case Data for Every U.S. County](https://www.nytimes.com/article/coronavirus-county-data-us.html).
 
 They are using the data for their [Coronavirus in the U.S.: Latest Map and Case Count](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html) article.
+
+## The Los Angeles Times
+
+The Los Angeles Time [comprehensive README](https://github.com/datadesk/california-coronavirus-data/blob/master/README.md) describes the data in the [latimes_agency_totals](https://covid-19.datasettes.com/covid/latimes_agency_totals), [latimes_county_totals](https://covid-19.datasettes.com/covid/latimes_county_totals), [latimes_place_totals](https://covid-19.datasettes.com/covid/latimes_place_totals) and [latimes_state_totals](https://covid-19.datasettes.com/covid/latimes_state_totals) tables.
+
+The data is used for their [Tracking coronavirus in California](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/) page, which is constantly updated.
 
 ## Example issues
 
