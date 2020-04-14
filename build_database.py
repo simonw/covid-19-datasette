@@ -15,6 +15,7 @@ EXTRA_CSVS = [
     (latimes_base / "latimes-county-totals.csv", "latimes_county_totals"),
     (latimes_base / "latimes-place-totals.csv", "latimes_place_totals"),
     (latimes_base / "latimes-state-totals.csv", "latimes_state_totals"),
+    (latimes_base / "cdph-state-totals.csv", "latimes_cdph_state_totals"),
 ]
 
 
