@@ -10,14 +10,19 @@
                 "johns_hopkins_csse_daily_reports": {
                     "sort_desc": "day",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
-                    "facets": ["province_or_state", "country_or_region"],
+                    "facets": [
+                        "province_or_state",
+                        "country_or_region"
+                    ],
                     "source": "Johns Hopkins CSSE",
                     "source_url": "https://github.com/CSSEGISandData/COVID-19"
                 },
                 "ny_times_us_states": {
                     "sort_desc": "date",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
-                    "facets": ["state"],
+                    "facets": [
+                        "state"
+                    ],
                     "source": "The New York Times",
                     "source_url": "https://github.com/nytimes/covid-19-data",
                     "license": "LICENSE",
@@ -26,7 +31,11 @@
                 "ny_times_us_counties": {
                     "sort_desc": "date",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
-                    "facets": ["state", "county", "fips"],
+                    "facets": [
+                        "state",
+                        "county",
+                        "fips"
+                    ],
                     "source": "The New York Times",
                     "source_url": "https://github.com/nytimes/covid-19-data",
                     "license": "LICENSE",
@@ -35,7 +44,11 @@
                 "latimes_agency_totals": {
                     "sort_desc": "date",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
-                    "facets": ["agency", "county", "fips"],
+                    "facets": [
+                        "agency",
+                        "county",
+                        "fips"
+                    ],
                     "source": "The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -46,7 +59,10 @@
                 "latimes_county_totals": {
                     "sort_desc": "date",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
-                    "facets": ["county", "fips"],
+                    "facets": [
+                        "county",
+                        "fips"
+                    ],
                     "source": "The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -57,7 +73,11 @@
                 "latimes_place_totals": {
                     "sort_desc": "date",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
-                    "facets": ["place", "county", "fips"],
+                    "facets": [
+                        "place",
+                        "county",
+                        "fips"
+                    ],
                     "source": "The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -85,6 +105,74 @@
                     "about": "Data dictionary for latimes_cdph_state_totals",
                     "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-state-totalscsv"
                 },
+                "la_times_cdph_adult_and_senior_care_facilities": {
+                    "sort_desc": "date",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "source": "California Department of Public Health via The Los Angeles Times",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data",
+                    "about": "Data dictionary for la_times_cdph_adult_and_senior_care_facilities",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-adult-and-senior-care-facilitiescsv"
+                },
+                "la_times_cdph_adult_and_senior_care_totals": {
+                    "sort_desc": "date",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "source": "California Department of Public Health via The Los Angeles Times",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data",
+                    "about": "Data dictionary for la_times_cdph_adult_and_senior_care_totals",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-adult-and-senior-care-totalscsv"
+                },
+                "la_times_cdph_hospital_patient_county_totals": {
+                    "sort_desc": "date",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "source": "California Department of Public Health via The Los Angeles Times",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data",
+                    "about": "Data dictionary for la_times_cdph_hospital_patient_county_totals",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-hospital-patient-county-totalscsv"
+                },
+                "la_times_cdph_nursing_homes": {
+                    "sort_desc": "date",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "source": "California Department of Public Health via The Los Angeles Times",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "la_times_cdph_skilled_nursing_facilities": {
+                    "sort_desc": "date",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "source": "California Department of Public Health via The Los Angeles Times",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data",
+                    "about": "Data dictionary for la_times_cdph_skilled_nursing_facilities",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-skilled-nursing-facilitiescsv"
+                },
+                "la_times_cdph_skilled_nursing_totals": {
+                    "sort_desc": "date",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "source": "California Department of Public Health via The Los Angeles Times",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data",
+                    "about": "Data dictionary for la_times_cdph_skilled_nursing_totals",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-skilled-nursing-totalscsv"
+                },
+                "la_times_cdph_state_totals": {
+                    "sort_desc": "date",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "source": "California Department of Public Health via The Los Angeles Times",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data",
+                    "about": "Data dictionary for la_times_cdph_state_totals",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-state-totalscsv"
+                },
                 "us_census_state_populations_2019": {
                     "source": "census.gov",
                     "source_url": "https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html"
@@ -93,7 +181,10 @@
                     "hidden": true,
                     "sort_desc": "day",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ This table has been renamed. Use <a href='/covid/johns_hopkins_csse_daily_reports'>johns_hopkins_csse_daily_reports</a> instead.</div>",
-                    "facets": ["province_or_state", "country_or_region"],
+                    "facets": [
+                        "province_or_state",
+                        "country_or_region"
+                    ],
                     "source": "Johns Hopkins CSSE",
                     "source_url": "https://github.com/CSSEGISandData/COVID-19"
                 }

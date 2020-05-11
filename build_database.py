@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 import sqlite_utils
 import csv
@@ -11,12 +12,6 @@ EXTRA_CSVS = [
     # file_path, table_name
     (nytimes_base / "us-counties.csv", "ny_times_us_counties"),
     (nytimes_base / "us-states.csv", "ny_times_us_states"),
-    (latimes_base / "latimes-agency-totals.csv", "latimes_agency_totals"),
-    (latimes_base / "latimes-county-totals.csv", "latimes_county_totals"),
-    (latimes_base / "latimes-place-totals.csv", "latimes_place_totals"),
-    (latimes_base / "latimes-state-totals.csv", "latimes_state_totals"),
-    (latimes_base / "cdph-state-totals.csv", "latimes_cdph_state_totals"),
-    (latimes_base / "cdph-adult-and-senior-care-facilities.csv", "la_times_cdph_adult_and_senior_care_facilities"),
 ]
 
 
@@ -121,8 +116,18 @@ if __name__ == "__main__":
             "daily_reports", "select * from johns_hopkins_csse_daily_reports"
         )
 
+    csvs_to_load = EXTRA_CSVS[:]
+    # Add LA Times CSVs, but only if they are in metadata.json
+    in_metadata = set(
+        json.load(open("metadata.json"))["databases"]["covid"]["tables"].keys()
+    )
+    for path in latimes_base.glob("*.csv"):
+        table_name = "la_times_{}".format(path.stem.replace("-", "_"))
+        if table_name in in_metadata:
+            csvs_to_load.append((path, table_name))
+
     # Now do the NYTimes and LA times data
-    for csv_path, table_name in EXTRA_CSVS:
+    for csv_path, table_name in csvs_to_load:
         table = db[table_name]
         if table.exists():
             table.drop()
