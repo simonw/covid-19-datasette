@@ -135,14 +135,6 @@
                     "about": "Data dictionary for la_times_cdph_hospital_patient_county_totals",
                     "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-hospital-patient-county-totalscsv"
                 },
-                "la_times_cdph_nursing_homes": {
-                    "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
-                    "source": "California Department of Public Health via The Los Angeles Times",
-                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
-                    "license": "Reusing the data",
-                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
-                },
                 "la_times_cdph_skilled_nursing_facilities": {
                     "sort_desc": "date",
                     "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
