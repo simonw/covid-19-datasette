@@ -7,6 +7,7 @@ base_path = (Path(__file__) / "..").resolve()
 jhu_csse_base = base_path / "COVID-19"
 nytimes_base = base_path / "covid-19-data"
 latimes_base = base_path / "california-coronavirus-data"
+economist_base = base_path / "covid-19-excess-deaths-tracker"
 
 EXTRA_CSVS = [
     # file_path, table_name
@@ -97,6 +98,35 @@ def load_csv(filepath):
             yield row
 
 
+def load_csv_with_cadence(filepath):
+    for row in load_csv(filepath):
+        cadence = None
+        if "week" in row:
+            cadence = "weekly"
+        elif "month" in row:
+            cadence = "monthly"
+        if cadence is not None:
+            row["cadence"] = cadence
+        yield row
+
+
+def load_economist_data(db, economist_base):
+    # economist_excess_deaths table
+    excess_table = db["economist_excess_deaths"]
+    if excess_table.exists():
+        excess_table.drop()
+    for filepath in (economist_base / "output-data" / "excess-deaths").glob("*.csv"):
+        excess_table.insert_all(load_csv_with_cadence(filepath), alter=True)
+    # economist_historical_deaths table
+    historical_table = db["economist_historical_deaths"]
+    if historical_table.exists():
+        historical_table.drop()
+    for filepath in (economist_base / "output-data" / "historical-deaths").glob(
+        "*.csv"
+    ):
+        historical_table.insert_all(load_csv_with_cadence(filepath), alter=True)
+
+
 if __name__ == "__main__":
     db = sqlite_utils.Database(base_path / "covid.db")
 
@@ -133,8 +163,11 @@ if __name__ == "__main__":
             table.drop()
         table.insert_all(load_csv(csv_path))
 
-    # And the US censes data
+    # And the US census data
     if "us_census_state_populations_2019" not in db.table_names():
         db["us_census_state_populations_2019"].insert_all(
             load_csv(base_path / "us_census_state_populations_2019.csv")
         )
+
+    # The Economist
+    load_economist_data(db, economist_base)

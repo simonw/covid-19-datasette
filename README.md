@@ -7,6 +7,7 @@ Deploys a Datasette instance with data from the following sources:
 * [CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19) by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)
 * [nytimes/covid-19-data](https://github.com/nytimes/covid-19-data) by The New York Times
 * [datadesk/california-coronavirus-data](https://github.com/datadesk/california-coronavirus-data) by The Los Angeles Times
+* [TheEconomist/covid-19-excess-deaths-tracker](https://github.com/TheEconomist/covid-19-excess-deaths-tracker) by The Economist
 
 The Datasette instance lives at https://covid-19.datasettes.com/ and is updated hourly using [a scheduled GitHub Action](https://github.com/simonw/covid-19-datasette/blob/master/.github/workflows/scheduled.yml).
 
@@ -46,6 +47,12 @@ The Los Angeles Time [comprehensive README](https://github.com/datadesk/californ
 See [To aid coronavirus fight, The Times releases database of California cases](https://www.latimes.com/california/story/2020-04-06/coronavirus-fight-la-times-releases-its-california-cases-database) for background on the release of this data.
 
 The data is used for their [Tracking coronavirus in California](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/) page, which is constantly updated.
+
+## The Economist
+
+The Economist publish the data behind their ongoing interactive [Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/2020/04/16/tracking-covid-19-excess-deaths-across-countries). Their [README](https://github.com/TheEconomist/covid-19-excess-deaths-tracker/blob/master/README.md) describes the data sources they use for individual countries in detail.
+
+This data is imported into the [economist_excess_deaths](https://covid-19.datasettes.com/covid/economist_excess_deaths) and  [economist_historical_deaths](https://covid-19.datasettes.com/covid/economist_historical_deaths) tables, with one alteration: a `cadence` column is added showing if each row is being collected on either a `weekly` or `monthly` basis.
 
 ## Example issues
 

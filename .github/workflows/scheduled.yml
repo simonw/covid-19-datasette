@@ -27,6 +27,11 @@ jobs:
       with:
         repository: datadesk/california-coronavirus-data
         path: california-coronavirus-data
+    - name: Check out Economist TheEconomist/covid-19-excess-deaths-tracker
+      uses: actions/checkout@v2
+      with:
+        repository: TheEconomist/covid-19-excess-deaths-tracker
+        path: covid-19-excess-deaths-tracker
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
