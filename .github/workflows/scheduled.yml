@@ -70,5 +70,6 @@ jobs:
           --service covid-19 \
           -m metadata.json \
           --install=datasette-vega \
-          --extra-options="--config facet_time_limit_ms:1000"
+          --extra-options="--config facet_time_limit_ms:1000" \
+          --branch=faea5093b865031f650da7da6539430f732f511a
 
