@@ -94,7 +94,16 @@ def load_csv(filepath):
         for row in csv.DictReader(fp):
             for key in row:
                 if row[key].isdigit():
+                    # Convert integers
                     row[key] = int(row[key])
+                else:
+                    try:
+                        float(row[key])
+                    except ValueError:
+                        pass
+                    else:
+                        # Convert floats
+                        row[key] = float(row[key])
             yield row
 
 
