@@ -191,6 +191,10 @@
                     "source": "census.gov",
                     "source_url": "https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html"
                 },
+                "us_census_county_populations_2019": {
+                    "source": "census.gov",
+                    "source_url": "https://www2.census.gov/programs-surveys/popest/tables/2010-2019/counties/totals/co-est2019-annres.xlsx"
+                },
                 "daily_reports": {
                     "hidden": true,
                     "sort_desc": "day",

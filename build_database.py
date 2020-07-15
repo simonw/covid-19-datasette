@@ -177,6 +177,10 @@ if __name__ == "__main__":
         db["us_census_state_populations_2019"].insert_all(
             load_csv(base_path / "us_census_state_populations_2019.csv")
         )
+    if "us_census_county_populations_2019" not in db.table_names():
+        db["us_census_county_populations_2019"].insert_all(
+            load_csv(base_path / "us_census_county_populations_2019.csv"), pk="fips"
+        )
 
     # The Economist
     load_economist_data(db, economist_base)

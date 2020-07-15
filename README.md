@@ -8,6 +8,7 @@ Deploys a Datasette instance with data from the following sources:
 * [nytimes/covid-19-data](https://github.com/nytimes/covid-19-data) by The New York Times
 * [datadesk/california-coronavirus-data](https://github.com/datadesk/california-coronavirus-data) by The Los Angeles Times
 * [TheEconomist/covid-19-excess-deaths-tracker](https://github.com/TheEconomist/covid-19-excess-deaths-tracker) by The Economist
+* State and county population estimates from the [US Census](https://www.census.gov/programs-surveys/popest.html)
 
 The Datasette instance lives at https://covid-19.datasettes.com/ and is updated hourly using [a scheduled GitHub Action](https://github.com/simonw/covid-19-datasette/blob/master/.github/workflows/scheduled.yml).
 
@@ -53,6 +54,15 @@ The data is used for their [Tracking coronavirus in California](https://www.lati
 The Economist publish the data behind their ongoing interactive [Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/2020/04/16/tracking-covid-19-excess-deaths-across-countries). Their [README](https://github.com/TheEconomist/covid-19-excess-deaths-tracker/blob/master/README.md) describes the data sources they use for individual countries in detail.
 
 This data is imported into the [economist_excess_deaths](https://covid-19.datasettes.com/covid/economist_excess_deaths) and  [economist_historical_deaths](https://covid-19.datasettes.com/covid/economist_historical_deaths) tables, with one alteration: a `cadence` column is added showing if each row is being collected on either a `weekly` or `monthly` basis.
+
+## US Census
+
+Two additional tables contain population data from the US Census.
+
+* [us_census_state_populations_2019](https://covid-19.datasettes.com/covid/us_census_state_populations_2019) has data on the estimated 2019 population of different US States, derived from their [state population totals](https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html).
+* [us_census_county_populations_2019](https://covid-19.datasettes.com/covid/us_census_county_populations_2019) has data on estimated 2019 population of different US counties, keyed against county FIPS codes. This data was compiled [by Aaron King](https://github.com/nytimes/covid-19-data/pull/155) using [U.S. Census Bureau, Population Division, "Annual Estimates of the Resident Population for Counties in the United States: April 1, 2010 to July 1, 2019 (CO-EST2019-ANNRES)](https://www2.census.gov/programs-surveys/popest/tables/2010-2019/counties/totals/co-est2019-annres.xlsx).
+
+This repository includes CSV data for both of these tables.
 
 ## Example issues
 
