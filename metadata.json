@@ -196,7 +196,17 @@
                     "source_url": "https://www2.census.gov/programs-surveys/popest/tables/2010-2019/counties/totals/co-est2019-annres.xlsx"
                 },
                 "latest_ny_times_counties_with_populations": {
-                    "sort_desc": "cases_per_million"
+                    "sort_desc": "cases_per_million",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/master/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "facets": [
+                        "state",
+                        "county",
+                        "fips"
+                    ],
+                    "source": "The New York Times",
+                    "source_url": "https://github.com/nytimes/covid-19-data",
+                    "license": "LICENSE",
+                    "license_url": "https://github.com/nytimes/covid-19-data/blob/master/LICENSE"
                 },
                 "daily_reports": {
                     "hidden": true,
