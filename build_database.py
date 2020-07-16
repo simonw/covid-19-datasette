@@ -184,3 +184,29 @@ if __name__ == "__main__":
 
     # The Economist
     load_economist_data(db, economist_base)
+
+    # More views
+    db.create_view("latest_ny_times_counties_with_populations", """
+    select
+      ny_times_us_counties.date,
+      ny_times_us_counties.county,
+      ny_times_us_counties.state,
+      ny_times_us_counties.fips,
+      ny_times_us_counties.cases,
+      ny_times_us_counties.deaths,
+      us_census_county_populations_2019.population,
+      1000000 * ny_times_us_counties.deaths / us_census_county_populations_2019.population as deaths_per_million,
+      1000000 * ny_times_us_counties.cases / us_census_county_populations_2019.population as cases_per_million
+    from
+      ny_times_us_counties
+      join us_census_county_populations_2019 on ny_times_us_counties.fips = us_census_county_populations_2019.fips
+    where
+      "date" = (
+        select
+          max(date)
+        from
+          ny_times_us_counties
+      )
+    order by
+      deaths_per_million desc
+    """, replace=True)
