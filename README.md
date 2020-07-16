@@ -64,7 +64,7 @@ Two additional tables contain population data from the US Census.
 
 This repository includes CSV data for both of these tables.
 
-The [latest_ny_times_counties_with_populations](https://covid-19.datasettes.com/covid/latest_ny_times_counties_with_populations) view uses this data to calculate cases and deaths per million for US counties.
+The [latest_ny_times_counties_with_populations](https://covid-19.datasettes.com/covid/latest_ny_times_counties_with_populations) view uses this data to calculate cases and deaths per million for US counties, based on the latest county figures from the New York Times.
 
 ## Example issues
 
