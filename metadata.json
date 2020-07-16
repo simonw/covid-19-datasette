@@ -195,6 +195,9 @@
                     "source": "census.gov",
                     "source_url": "https://www2.census.gov/programs-surveys/popest/tables/2010-2019/counties/totals/co-est2019-annres.xlsx"
                 },
+                "latest_ny_times_counties_with_populations": {
+                    "sort_desc": "cases_per_million"
+                },
                 "daily_reports": {
                     "hidden": true,
                     "sort_desc": "day",
