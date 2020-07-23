@@ -144,6 +144,7 @@ if __name__ == "__main__":
     if table.exists():
         table.drop()
     table.insert_all(load_daily_reports())
+    table.create_index(["day"], if_not_exists=True)
     table.create_index(["province_or_state"], if_not_exists=True)
     table.create_index(["country_or_region"], if_not_exists=True)
     add_missing_latitude_longitude(db)
