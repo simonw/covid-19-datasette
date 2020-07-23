@@ -70,6 +70,7 @@ jobs:
         datasette publish cloudrun covid.db \
           --service covid-19 \
           -m metadata.json \
+          --memory 1Gi \
           --install=datasette-vega \
           --install=datasette-copyable \
           --extra-options="--config facet_time_limit_ms:1000"
