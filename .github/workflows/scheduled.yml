@@ -2,6 +2,8 @@ name: Fetch latest data and deploy with Datasette
 
 on:
   push:
+    branches:
+      - master
   workflow_dispatch:
   schedule:
     - cron: '5 * * * *'
