@@ -72,5 +72,5 @@ jobs:
           --memory 1Gi \
           --install=datasette-vega \
           --install=datasette-copyable \
-          --install="datasette-graphql>=0.5" \
+          --install="datasette-graphql>=0.9" \
           --extra-options="--config facet_time_limit_ms:1000"
