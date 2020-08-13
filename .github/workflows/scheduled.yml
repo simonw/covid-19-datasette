@@ -75,4 +75,5 @@ jobs:
           --install=datasette-vega \
           --install=datasette-copyable \
           --install="datasette-graphql>=0.12" \
+          --install=datasette-atom \
           --extra-options="--config facet_time_limit_ms:1000"

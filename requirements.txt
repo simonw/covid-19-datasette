@@ -2,3 +2,4 @@ datasette>=0.39
 sqlite-utils
 datasette-vega
 datasette-graphql
+datasette-atom
