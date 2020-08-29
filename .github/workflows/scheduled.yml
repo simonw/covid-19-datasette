@@ -70,7 +70,7 @@ jobs:
         gcloud config set project datasette-222320
         datasette publish cloudrun covid.db \
           --service covid-19 \
-          --branch master \
+          --branch 0.49a0 \
           -m metadata.json \
           --memory 1Gi \
           --install=datasette-vega \
