@@ -1,5 +1,6 @@
-datasette>=0.39
+datasette>=0.49a0
 sqlite-utils
 datasette-vega
 datasette-graphql
 datasette-atom
+datasette-yaml==0.1a

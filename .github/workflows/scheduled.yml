@@ -70,10 +70,12 @@ jobs:
         gcloud config set project datasette-222320
         datasette publish cloudrun covid.db \
           --service covid-19 \
+          --branch master \
           -m metadata.json \
           --memory 1Gi \
           --install=datasette-vega \
           --install=datasette-copyable \
           --install="datasette-graphql>=0.12" \
+          --install="datasette-yaml==0.1a" \
           --install=datasette-atom \
           --extra-options="--config facet_time_limit_ms:1000"
