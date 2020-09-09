@@ -176,6 +176,10 @@ if __name__ == "__main__":
             table.drop()
         table.insert_all(load_csv(csv_path))
 
+    db["ny_times_us_counties"].create_index(["state"])
+    db["ny_times_us_counties"].create_index(["county"])
+    db["ny_times_us_counties"].create_index(["fips"])
+
     # And the US census data
     if "us_census_state_populations_2019" not in db.table_names():
         db["us_census_state_populations_2019"].insert_all(
