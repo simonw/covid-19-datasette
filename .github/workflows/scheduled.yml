@@ -72,7 +72,7 @@ jobs:
           --service covid-19 \
           --branch 0.49a0 \
           -m metadata.json \
-          --memory 1Gi \
+          --memory 2Gi \
           --install=datasette-vega \
           --install=datasette-copyable \
           --install="datasette-graphql>=0.12" \
