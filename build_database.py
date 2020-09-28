@@ -165,7 +165,9 @@ if __name__ == "__main__":
         json.load(open("metadata.json"))["databases"]["covid"]["tables"].keys()
     )
     for path in latimes_base.glob("*.csv"):
-        table_name = "la_times_{}".format(path.stem.replace("-", "_"))
+        table_name = path.stem.replace("-", "_")
+        if not table_name.startswith("latimes_"):
+            table_name = "la_times_{}".format(table_name)
         if table_name in in_metadata:
             csvs_to_load.append((path, table_name))
 
