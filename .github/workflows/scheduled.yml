@@ -75,7 +75,7 @@ jobs:
           --memory 2Gi \
           --install=datasette-vega \
           --install=datasette-copyable \
-          --install="datasette-graphql>=0.12" \
-          --install="datasette-yaml==0.1a" \
+          --install=datasette-graphql \
+          --install=datasette-yaml \
           --install=datasette-atom \
           --extra-options="--config facet_time_limit_ms:3000 --config sql_time_limit_ms:3000"
