@@ -58,7 +58,7 @@ jobs:
         echo "##[set-output name=deployed;]$(curl -s https://covid-19.datasettes.com/-/databases.json | jq '.[0].hash' -r)"
     - name: Set up Cloud Run
       if: github.event_name == 'workflow_dispatch' || steps.decide_variables.outputs.latest != steps.decide_variables.outputs.deployed
-      uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      uses: google-github-actions/setup-gcloud@master
       with:
         version: '275.0.0'
         service_account_email: ${{ secrets.GCP_SA_EMAIL }}
