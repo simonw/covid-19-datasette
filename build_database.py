@@ -49,7 +49,7 @@ def load_daily_reports():
                     "fips": row.get("FIPS", "").strip() or None,
                     "confirmed": int(row["Confirmed"] or 0),
                     "deaths": int(row["Deaths"] or 0),
-                    "recovered": int(row["Recovered"] or 0),
+                    "recovered": int(float(row["Recovered"]) or 0),
                     "active": int(row["Active"]) if row.get("Active") else None,
                     "latitude": row.get("Latitude") or row.get("Lat") or None,
                     "longitude": row.get("Longitude") or row.get("Long_") or None,
