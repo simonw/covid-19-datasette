@@ -3,5 +3,5 @@ sqlite-utils
 datasette-vega
 datasette-graphql
 datasette-atom
-datasette-yaml==0.1a
+datasette-yaml
 datasette-export-notebook
