@@ -1,4 +1,4 @@
-datasette>=0.49a0
+datasette>=0.54
 sqlite-utils
 datasette-vega
 datasette-graphql
