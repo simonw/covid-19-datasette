@@ -78,5 +78,5 @@ jobs:
           --install=datasette-graphql \
           --install=datasette-yaml \
           --install=datasette-atom \
-          --install=datasette-export-notebook \
+          --install=datasette-export-notebook>=0.3 \
           --extra-options="--config facet_time_limit_ms:3000 --config sql_time_limit_ms:3000"
