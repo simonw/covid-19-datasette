@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 import sqlite_utils
+from sqlite_utils.db import DescIndex
 import csv
 
 base_path = (Path(__file__) / "..").resolve()
@@ -181,7 +182,7 @@ if __name__ == "__main__":
     db["ny_times_us_counties"].create_index(["state"])
     db["ny_times_us_counties"].create_index(["county"])
     db["ny_times_us_counties"].create_index(["fips"])
-    db["ny_times_us_counties"].create_index(["date"])
+    db["ny_times_us_counties"].create_index([DescIndex("date")])
 
     # And the US census data
     if "us_census_state_populations_2019" not in db.table_names():
