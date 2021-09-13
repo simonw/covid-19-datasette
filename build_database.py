@@ -135,6 +135,9 @@ def load_economist_data(db, economist_base):
         "*.csv"
     ):
         historical_table.insert_all(load_csv_with_cadence(filepath), alter=True)
+    historical_table.create_index(["country"], if_not_exists=True)
+    historical_table.create_index(["cadence"], if_not_exists=True)
+    historical_table.create_index(["end_date"], if_not_exists=True)
 
 
 if __name__ == "__main__":
