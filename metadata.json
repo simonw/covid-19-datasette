@@ -2,14 +2,14 @@
     "title": "COVID-19 cases, using data from Johns Hopkins CSSE, the New York Times and the LA Times",
     "about": "simonw/covid-19-datasette",
     "about_url": "https://github.com/simonw/covid-19-datasette",
-    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
     "databases": {
         "covid": {
-            "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+            "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
             "tables": {
                 "johns_hopkins_csse_daily_reports": {
                     "sort_desc": "day",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "province_or_state",
                         "country_or_region"
@@ -19,7 +19,7 @@
                 },
                 "economist_excess_deaths": {
                     "sort_desc": "end_date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "country",
                         "cadence"
@@ -30,7 +30,7 @@
                     "license_url": "https://creativecommons.org/licenses/by/4.0/"
                 },
                 "economist_historical_deaths": {
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "country",
                         "cadence"
@@ -42,7 +42,7 @@
                 },
                 "ny_times_us_states": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "state"
                     ],
@@ -53,7 +53,7 @@
                 },
                 "ny_times_us_counties": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "state",
                         "county",
@@ -66,7 +66,7 @@
                 },
                 "latimes_agency_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "agency",
                         "county",
@@ -81,7 +81,7 @@
                 },
                 "latimes_county_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "county",
                         "fips"
@@ -95,7 +95,7 @@
                 },
                 "latimes_place_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "county",
                         "fips"
@@ -109,7 +109,7 @@
                 },
                 "latimes_state_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "source": "The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -119,7 +119,7 @@
                 },
                 "latimes_cdph_state_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "source": "California Department of Public Health via The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -129,7 +129,7 @@
                 },
                 "la_times_cdph_adult_and_senior_care_facilities": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "source": "California Department of Public Health via The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -139,7 +139,7 @@
                 },
                 "la_times_cdph_adult_and_senior_care_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "source": "California Department of Public Health via The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -149,7 +149,7 @@
                 },
                 "la_times_cdph_hospital_patient_county_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "source": "California Department of Public Health via The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -159,7 +159,7 @@
                 },
                 "la_times_cdph_skilled_nursing_facilities": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "source": "California Department of Public Health via The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -169,7 +169,7 @@
                 },
                 "la_times_cdph_skilled_nursing_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "source": "California Department of Public Health via The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -179,7 +179,7 @@
                 },
                 "la_times_cdph_state_totals": {
                     "sort_desc": "date",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "source": "California Department of Public Health via The Los Angeles Times",
                     "source_url": "https://github.com/datadesk/california-coronavirus-data",
                     "license": "Reusing the data",
@@ -197,7 +197,7 @@
                 },
                 "latest_ny_times_counties_with_populations": {
                     "sort_desc": "cases_per_million",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It’s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f Consult <a href='https://github.com/simonw/covid-19-datasette/blob/main/README.md'>the README</a> for warnings about using and building on this data. Also review <a href='https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/'>Why It\u2019s So Freaking Hard To Make A Good COVID-19 Model</a> and <a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>Ten Considerations Before You Create Another Chart About COVID-19</a>.</div>",
                     "facets": [
                         "state"
                     ],
@@ -209,13 +209,905 @@
                 "daily_reports": {
                     "hidden": true,
                     "sort_desc": "day",
-                    "description_html": "<div style='border: 2px solid red; padding: 1em'>⚠️ This table has been renamed. Use <a href='/covid/johns_hopkins_csse_daily_reports'>johns_hopkins_csse_daily_reports</a> instead.</div>",
+                    "description_html": "<div style='border: 2px solid red; padding: 1em'>\u26a0\ufe0f This table has been renamed. Use <a href='/covid/johns_hopkins_csse_daily_reports'>johns_hopkins_csse_daily_reports</a> instead.</div>",
                     "facets": [
                         "province_or_state",
                         "country_or_region"
                     ],
                     "source": "Johns Hopkins CSSE",
                     "source_url": "https://github.com/CSSEGISandData/COVID-19"
+                }
+            }
+        },
+        "la-times": {
+            "tables": {
+                "cdph-county-cases-deaths": {
+                    "description_html": "<p>The county-level totals of cases and deaths logged by the California Department of Public Health.</p>",
+                    "columns": {
+                        "county": "The name of the county where the agency is based.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of coronavirus cases that were confirmed as of that time. This is sometimes called the episode date by other sources.",
+                        "reported_cases": "The cumulative number of coronavirus cases that were reported as of that time. This reflects when cases were first announced by the state.",
+                        "probable_cases": "The cumulative number of probable coronavirus cases that were confirmed as of that time. This reflects the results of antigen tests, a rapid testing technique different from the standard test.",
+                        "reported_and_probable_cases": "The cumulative number of reported and probable coronavirus cases as of that time.",
+                        "reported_deaths": "The cumulative number of deaths reported at that time."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-county-cases-deathscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-state-cases-deaths": {
+                    "description_html": "<p>The statewide total of cases and deaths logged by the California Department of Public Health.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of coronavirus cases that were confirmed as of that time. This is sometimes called the episode date by other sources.",
+                        "reported_cases": "The cumulative number of coronavirus cases that were reported as of that time. This reflects when cases were first announced by the state.",
+                        "probable_cases": "The cumulative number of probable coronavirus cases that were confirmed as of that time. This reflects the results of antigen tests, a rapid testing technique different from the standard test.",
+                        "reported_and_probable_cases": "The cumulative number of reported and probable coronavirus cases as of that time.",
+                        "reported_deaths": "The cumulative number of deaths reported at that time."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-state-cases-deathscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-positive-test-rate": {
+                    "description_html": "<p>All of the data used by The Times to estimate how many recent tests have come back positive. The daily tallies of new cases and tests are drawn from <a href=\"./cdph-state-totals.csv\">cdph-state-totals.csv</a>.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus case at that time.",
+                        "total_tests": "The total number of tests conducted.",
+                        "new_confirmed_cases": "The number of new confirmed cases compared to the previous date.",
+                        "new_tests": "The number of new tests compared to the previous date.",
+                        "new_confirmed_cases_seven_day_total": "The total number of new confirmed cases in the previous seven days.",
+                        "new_tests_seven_day_total": "The total number of new tests in the previous seven days.",
+                        "positive_test_rate_seven_day_percent": "The positive test rate over the past seven days, calculated by dividing the number of new confirmed cases over that time into the number of new tests."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-positive-test-ratecsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-agency-totals": {
+                    "description_html": "<p>The total cases and deaths logged by local public health agencies each day. Each row contains the cumulative totals reported by a single agency as of that date. This file stopped updating in September 2021 when The Times switched its tracker to use case and death counts consolidated by the state's Department of Public Health. Those figures can be found elsewhere in this repository.</p>\n<p>Most counties have only one agency except for Alameda and Los Angeles counties, where some cities run independent health departments. In Alameda County, the city of Berkeley is managed independently. In Los Angeles County, Pasadena and Long Beach are managed independently. These cities' totals are broken out into separate rows. In order to calculate county-level totals, you must aggregate them together using the <code>county</code> field.</p>",
+                    "columns": {
+                        "agency": "The name of the county or city public health agency that provided the data. Guaranteed to be unique when combined with the date field.",
+                        "county": "The name of the county where the agency is based.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus cases as of this date.",
+                        "deaths": "The cumulative number of deaths attributed to coronavirus as of this date.",
+                        "did_not_update": "Indicates if the agency did not provide an update on this date. If this is true and the case and death totals are unchanged from the previous day, this means they were holdovers. Use this flag omit these records when desired."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-agency-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-county-totals": {
+                    "description_html": "<p>The county-level totals of cases and deaths logged by local public health agencies each day. This is a derived table. Each row contains the aggregation of all local agency reports in that county logged by Los Angeles Times reporters and editors in <code>latimes-agency-totals.csv</code>.  This file stopped updating in September 2021 when The Times switched its tracker to use case and death counts consolidated by the state's Department of Public Health. Those figures can be found elsewhere in this repository.</p>\n<p>It comes with all of the same caveats as its source. It is included here as a convenience.</p>",
+                    "columns": {
+                        "county": "The name of the county where the agency is based.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus case at that time.",
+                        "deaths": "The cumulative number of deaths at that time.",
+                        "new_confirmed_cases": "The net change in confirmed cases over the previous date.",
+                        "new_deaths": "The net change in deaths over the previous date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-county-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-state-totals": {
+                    "description_html": "<p>The statewide total of cases and deaths logged by local public health agencies each day. This is a derived table. Each row contains the aggregation of all local agency reports logged by Los Angeles Times reporters and editors in <code>latimes-agency-totals.csv</code>.  This file stopped updating in September 2021 when The Times switched its tracker to use case and death counts consolidated by the state's Department of Public Health. Those figures can be found elsewhere in this repository.</p>\n<p>It comes with all of the same caveats as its source. It is included here as a convenience.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus case at that time.",
+                        "deaths": "The cumulative number of deaths at that time.",
+                        "new_confirmed_cases": "The net change in confirmed cases over the previous date.",
+                        "new_deaths": "The net change in deaths over the previous date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-state-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-place-totals": {
+                    "description_html": "<p>Most counties break out the location of cases within their service area. The Times is gathering and consolidating these lists. Each row contains cumulative case totals reported in that area as of that date. Some counties currently do not report cases by locality.</p>\n<p>Different counties provide different geography types. Some provide data by region, some by Census designation, some by ZIP Code. The locations provided by Los Angeles County correspond to the public health department's official \"Countywide Statistical Areas\". Locations can be mapped after being joined to the shapes in <code>latimes-places-polygons.geojson</code> using the <code>id</code> column.</p>\n<p>Be aware that some counties have shifted the place names used over time.</p>\n<p>In some circumstances the true total of cases is obscured. Los Angeles and Orange counties decline to provide the precise number of cases in areas with low populations and instead provide a potential range. The lowest number in the range is entered into the record in the <code>confirmed_cases</code> field and an accompanying <code>note</code> includes the set of possible values.</p>",
+                    "columns": {
+                        "id": "The unique identifier of the city, neighborhood or other area.",
+                        "name": "The name of the city, neighborhood or other area.",
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "county": "The name of the county where the city is located.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus case at that time.",
+                        "note": "In cases where the confirmed_cases are obscured, this explains the range of possible values.",
+                        "population": "The number of residents in the area. Not available for all places."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-place-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-county-recovery-estimates": {
+                    "description_html": "<p>The estimated number of recovered and active cases by county each day.</p>\n<p>The number is calculated by subtracting active case, deaths and currently hospitalized patients from the total case count. Active cases are estimated as the number of new cases over the last 14 days, which is based on the amount of time the CDC says most adults remain infectious with COVID-19. The Times consulted biostatisticians at UCLA and UCSF to develop the approach. Some health agencies use the same method.</p>\n<p>The result matches closely in areas with officially reported counts. One limitation is that there may be some overlap among active and hospitilized cases, leading to an underestimate in the number of recovered patients.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "county": "The name of the county where the agency is based.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "recoveries_estimated": "The cumulative number of estimated recovered coronavirus cases as of this date.",
+                        "active_cases": "The current number of presumed active cases, or newly reported cases in the last 14 days, as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-county-recovery-estimatescsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-state-recovery-estimates": {
+                    "description_html": "<p>The estimated number of recovered and active cases statewide each day.</p>\n<p>The number is calculated by subtracting active case, deaths and currently hospitalized patients from the total case count. Active cases are estimated as the number of new cases over the last 14 days, which is based on the amount of time the CDC says most adults remain infectious with COVID-19. The Times consulted biostatisticians at UCLA and UCSF to develop the approach. Some health agencies use the same method.</p>\n<p>The result matches closely in areas with officially reported counts. One limitation is that there may be some overlap among active and hospitilized cases, leading to an underestimate in the number of recovered patients.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "recoveries_estimated": "The cumulative number of estimated recovered coronavirus cases as of this date.",
+                        "active_cases": "The current number of presumed active cases, or newly reported cases in the last 14 days, as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-state-recovery-estimatescsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdc-vaccination-state-totals": {
+                    "description_html": "<p>State-level vaccination totals derived from the dashboard published by the U.S. Centers for Disease Control and Prevention.</p>",
+                    "columns": {
+                        "date": "The date when the data were collected in ISO 8601 format.",
+                        "state": "The name of the state.",
+                        "population": "The number of people who live in the state.",
+                        "doses_distributed": "The total number of doses sent to the state as of that date.",
+                        "doses_administered": "The total number of shots given out in the state as of that date.",
+                        "doses_administered_percent": "The percentage of distributed doses that have been administered as of that date.",
+                        "administered_dose1": "The number of first doses administered in the state of that date.",
+                        "administered_dose1_percent": "The percentage of people in the state who have received at least one dose as of that date.",
+                        "administered_dose2": "The number of second doses administered in the state of that date.",
+                        "administered_dose2_percent": "The percentage of people in the state who are fully vaccinated as of that date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdc-vaccination-state-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-vaccination-county-totals": {
+                    "description_html": "<p>California's Department of Public Health releases <a href=\"https://public.tableau.com/profile/ca.open.data#!/vizhome/COVID-19VaccineDashboardPublic/Vaccine\" rel=\"nofollow\">county-level vaccination totals</a> via a Tableau dashboard. Our team extracts and logs the data each day.</p>",
+                    "columns": {
+                        "date": "The date for which data were reported in ISO 8601 format.",
+                        "county": "The name of the county.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "population": "The number of people who live in the county.",
+                        "doses_administered": "The total number of doses given as of this date.",
+                        "new_doses_administered": "The number of new doses compared to the previous date.",
+                        "pfizer_doses": "The total number of Pfizer doses given as of this date.",
+                        "new_pfizer_doses": "The number of new Pfizer doses compared to the previous date.",
+                        "moderna_doses": "The total number of Moderna doses given as of this date.",
+                        "new_moderna_doses": "The number of new Moderna doses compared to the previous date.",
+                        "jj_doses": "The total number of Johnson & Johnson doses given as of this date.",
+                        "new_jj_doses": "The number of new Johnson & Johnson doses compared to the previous date.",
+                        "partially_vaccinated": "The total number of partially vaccinated people as of this date.",
+                        "new_partially_vaccinated": "The number of new partially vaccinated people compared to the previous date.",
+                        "at_least_one_dose": "The total number of people who have received at least one dose any vaccine given as of this date.",
+                        "new_at_least_one_dose": "The number of new people who have received at least one dose any vaccine compared to the previous date.",
+                        "fully_vaccinated": "The total number of fully vaccinated people as of this date.",
+                        "new_fully_vaccinated": "The number of new fully vaccinated people compared to the previous date.",
+                        "partially_vaccinated_percent": "The percentage of people who were partially vaccinated as of this date.",
+                        "at_least_one_dose_percent": "The percentage of people who received at least one dose any vaccine as of this date.",
+                        "fully_vaccinated_percent": "The percentage of people who were fully vaccinated as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-vaccination-county-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-vaccination-state-totals": {
+                    "description_html": "<p>California's Department of Public Health is releasing <a href=\"https://public.tableau.com/profile/ca.open.data#!/vizhome/COVID-19VaccineDashboardPublic/Vaccine\" rel=\"nofollow\">state-level vaccination totals</a>. Our team extracts and logs the data each day.</p>",
+                    "columns": {
+                        "date": "The date for which data were reported in ISO 8601 format.",
+                        "doses_administered": "The total number of doses given as of this date.",
+                        "new_doses_administered": "The number of new doses compared to the previous date.",
+                        "pfizer_doses": "The total number of Pfizer doses given as of this date.",
+                        "new_pfizer_doses": "The number of new Pfizer doses compared to the previous date.",
+                        "moderna_doses": "The total number of Moderna doses given as of this date.",
+                        "new_moderna_doses": "The number of new Moderna doses compared to the previous date.",
+                        "jj_doses": "The total number of Johnson & Johnson doses given as of this date.",
+                        "new_jj_doses": "The number of new Johnson & Johnson doses compared to the previous date.",
+                        "partially_vaccinated": "The total number of partially vaccinated people as of this date.",
+                        "new_partially_vaccinated": "The number of new partially vaccinated people compared to the previous date.",
+                        "at_least_one_dose": "The total number of people who have received at least one dose any vaccine given as of this date.",
+                        "new_at_least_one_dose": "The number of new people who have received at least one dose any vaccine compared to the previous date.",
+                        "fully_vaccinated": "The total number of fully vaccinated people as of this date.",
+                        "new_fully_vaccinated": "The number of new fully vaccinated people compared to the previous date.",
+                        "partially_vaccinated_percent": "The percentage of people who were partially vaccinated as of this date.",
+                        "at_least_one_dose_percent": "The percentage of people who received at least one dose any vaccine as of this date.",
+                        "fully_vaccinated_percent": "The percentage of people who were fully vaccinated as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-vaccination-state-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-vaccination-zipcode-totals": {
+                    "description_html": "<p>California's Department of Public Health is releasing zipcode-level vaccination totals. Our team extracts and logs the data each day. Population estimates from the U.S. Census Bureau, gathered by The Times, are used to calculate the percentage of the total population that is vaccinated.</p>",
+                    "columns": {
+                        "date": "The date for which data were reported in ISO 8601 format.",
+                        "id": "The unique identifer of the ZIP Code.",
+                        "county": "The name of the county.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "population": "The number of people who live in the county.",
+                        "partially_vaccinated": "The total number of partially vaccinated people as of this date.",
+                        "at_least_one_dose": "The total number of people who have received at least one dose any vaccine given as of this date.",
+                        "fully_vaccinated": "The total number of fully vaccinated people as of this date.",
+                        "partially_vaccinated_percent": "The percentage of people who were partially vaccinated as of this date.",
+                        "at_least_one_dose_percent": "The percentage of people who received at least one dose any vaccine as of this date.",
+                        "fully_vaccinated_percent": "The percentage of people who were fully vaccinated as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-vaccination-zipcode-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-age": {
+                    "description_html": "<p>Statewide demographic data tallying totals by age for both cases and deaths. Provided by the <a href=\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19-Cases-by-Age-Group.aspx\" rel=\"nofollow\">California Department of Public Health</a>.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "age": "The age bracket being tallied",
+                        "confirmed_cases_total": "The cumulative number of confirmed coronavirus case amoung this age bracket at that time.",
+                        "confirmed_cases_percent": "The case totals percentage of the total in this age bracket",
+                        "deaths_total": "The cumulative number of deaths case amoung this age bracket at that time.",
+                        "deaths_percent": "The death totals percentage of the total in this age bracket."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-agecsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-population-race-ethnicity": {
+                    "description_html": "<p>The breakdown of the population by race and ethnicity statewide and in each of the 58 counties, as provided by the California Department of Public Health.</p>",
+                    "columns": {
+                        "county": "The name of the county. The state of California also included as a row.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "aian": "The percentage of people in the area who are American Indian or Alaska Native",
+                        "asian": "The percentage of people in the area who are Asian",
+                        "black": "The percentage of people in the area who are Black",
+                        "latino": "The percentage of people in the area who are Latino",
+                        "multirace": "The percentage of people in the area who are multirace",
+                        "nhpi": "The percentage of people in the area who are Native Hawaiian or Pacific Islander",
+                        "other": "The percentage of people in the area who are of another race",
+                        "unknown": "The percentage of people in the area who are of unknown race",
+                        "white": "The percentage of people in the area who are white"
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-population-race-ethnicitycsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-race-ethnicity": {
+                    "description_html": "<p>Statewide demographic data tallying race totals by age for both cases and deaths. Provided by the <a href=\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Race-Ethnicity.aspx\" rel=\"nofollow\">California Department of Public Health</a>.</p>\n<p>The original race categories published by the state have been grouped and aggregated to match the five race categories traditionally published by the Los Angeles Times.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "race": "The race being tallied.",
+                        "age": "The age bracket being tallied",
+                        "confirmed_cases_total": "The cumulative number of confirmed coronavirus case amoung this race and age at that time.",
+                        "confirmed_cases_percent": "The case totals percentage of the total in this age bracket",
+                        "deaths_total": "The cumulative number of deaths case amoung this race and age at that time.",
+                        "deaths_percent": "The death totals percentage of the total in this age bracket.",
+                        "population_percent": "The race's percentage of the overall state population in this age bracket."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-race-ethnicitycsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-vaccination-county-by-age": {
+                    "description_html": "<p>California's Department of Public Health releases <a href=\"https://public.tableau.com/profile/ca.open.data#!/vizhome/COVID-19VaccineDashboardPublic/Vaccine\" rel=\"nofollow\">county-level vaccination totals</a> segemented by age.</p>",
+                    "columns": {
+                        "county": "The name of the county.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "date": "The date for which data were reported in ISO 8601 format.",
+                        "age_group": "The age group being tallied.",
+                        "partially_vaccinated": "The total number of partially vaccinated people as of this date.",
+                        "at_least_one_dose": "The total number of people who have received at least one dose any vaccine given as of this date.",
+                        "fully_vaccinated": "The total number of fully vaccinated people as of this date.",
+                        "population_total": "The number of people who live in the county.",
+                        "population_12_and_up": "The number of people 12 years or older who live in the county.",
+                        "partially_vaccinated_percent": "The percentage of people who were partially vaccinated as of this date.",
+                        "partially_vaccinated_percent_12_and_up": "The percentage of people 12 and up who were partially vaccinated as of this date.",
+                        "at_least_one_dose_percent": "The percentage of people who received at least one dose any vaccine as of this date.",
+                        "at_least_one_dose_percent_12_and_up": "The percentage of people 12 and up who received at least one dose any vaccine as of this date.",
+                        "fully_vaccinated_percent": "The percentage of people who were fully vaccinated as of this date.",
+                        "fully_vaccinated_percent_12_and_up": "The percentage of people 12 and up who were fully vaccinated as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-vaccination-county-by-agecsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-vaccination-county-by-race-ethnicity": {
+                    "description_html": "<p>California's Department of Public Health releases <a href=\"https://public.tableau.com/profile/ca.open.data#!/vizhome/COVID-19VaccineDashboardPublic/Vaccine\" rel=\"nofollow\">county-level vaccination totals</a> segemented by race and ethnicity. The racial groups provided by the state have been simplified to the categories commonly used by Los Angeles Times.</p>",
+                    "columns": {
+                        "county": "The name of the county.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "date": "The date for which data were reported in ISO 8601 format.",
+                        "race_ethnicity": "The race group being tallied.",
+                        "partially_vaccinated": "The total number of partially vaccinated people as of this date.",
+                        "at_least_one_dose": "The total number of people who have received at least one dose any vaccine given as of this date.",
+                        "fully_vaccinated": "The total number of fully vaccinated people as of this date.",
+                        "population_total": "The number of people who live in the county.",
+                        "population_12_and_up": "The number of people 12 years or older who live in the county.",
+                        "partially_vaccinated_percent": "The percentage of people who were partially vaccinated as of this date.",
+                        "partially_vaccinated_percent_12_and_up": "The percentage of people 12 and up who were partially vaccinated as of this date.",
+                        "at_least_one_dose_percent": "The percentage of people who received at least one dose any vaccine as of this date.",
+                        "at_least_one_dose_percent_12_and_up": "The percentage of people 12 and up who received at least one dose any vaccine as of this date.",
+                        "fully_vaccinated_percent": "The percentage of people who were fully vaccinated as of this date.",
+                        "fully_vaccinated_percent_12_and_up": "The percentage of people 12 and up who were fully vaccinated as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-vaccination-county-by-race-ethnicitycsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-vaccination-state-by-age": {
+                    "description_html": "<p>California's Department of Public Health releases <a href=\"https://public.tableau.com/profile/ca.open.data#!/vizhome/COVID-19VaccineDashboardPublic/Vaccine\" rel=\"nofollow\">county-level vaccination totals</a> segemented by age.</p>",
+                    "columns": {
+                        "date": "The date for which data were reported in ISO 8601 format.",
+                        "age_group": "The age group being tallied.",
+                        "partially_vaccinated": "The total number of partially vaccinated people as of this date.",
+                        "at_least_one_dose": "The total number of people who have received at least one dose any vaccine given as of this date.",
+                        "fully_vaccinated": "The total number of fully vaccinated people as of this date.",
+                        "population_total": "The number of people who live in the county.",
+                        "population_12_and_up": "The number of people 12 years or older who live in the county.",
+                        "partially_vaccinated_percent": "The percentage of people who were partially vaccinated as of this date.",
+                        "partially_vaccinated_percent_12_and_up": "The percentage of people 12 and up who were partially vaccinated as of this date.",
+                        "at_least_one_dose_percent": "The percentage of people who received at least one dose any vaccine as of this date.",
+                        "at_least_one_dose_percent_12_and_up": "The percentage of people 12 and up who received at least one dose any vaccine as of this date.",
+                        "fully_vaccinated_percent": "The percentage of people who were fully vaccinated as of this date.",
+                        "fully_vaccinated_percent_12_and_up": "The percentage of people 12 and up who were fully vaccinated as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-vaccination-state-by-agecsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-vaccination-state-by-race-ethnicity": {
+                    "description_html": "<p>California's Department of Public Health releases <a href=\"https://public.tableau.com/profile/ca.open.data#!/vizhome/COVID-19VaccineDashboardPublic/Vaccine\" rel=\"nofollow\">county-level vaccination totals</a> segemented by race and ethnicity. The racial groups provided by the state have been simplified to the categories commonly used by Los Angeles Times.</p>",
+                    "columns": {
+                        "date": "The date for which data were reported in ISO 8601 format.",
+                        "race_ethnicity": "The race group being tallied.",
+                        "partially_vaccinated": "The total number of partially vaccinated people as of this date.",
+                        "at_least_one_dose": "The total number of people who have received at least one dose any vaccine given as of this date.",
+                        "fully_vaccinated": "The total number of fully vaccinated people as of this date.",
+                        "population_total": "The number of people who live in the county.",
+                        "population_12_and_up": "The number of people 12 years or older who live in the county.",
+                        "partially_vaccinated_percent": "The percentage of people who were partially vaccinated as of this date.",
+                        "partially_vaccinated_percent_12_and_up": "The percentage of people 12 and up who were partially vaccinated as of this date.",
+                        "at_least_one_dose_percent": "The percentage of people who received at least one dose any vaccine as of this date.",
+                        "at_least_one_dose_percent_12_and_up": "The percentage of people 12 and up who received at least one dose any vaccine as of this date.",
+                        "fully_vaccinated_percent": "The percentage of people who were fully vaccinated as of this date.",
+                        "fully_vaccinated_percent_12_and_up": "The percentage of people 12 and up who were fully vaccinated as of this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-vaccination-state-by-race-ethnicitycsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-hospital-patient-county-totals": {
+                    "description_html": "<p>California's Department of Public Health is releasing <a href=\"https://data.chhs.ca.gov/dataset/california-covid-19-hospital-data-and-case-statistics\" rel=\"nofollow\">county-level hospitalization totals</a>.</p>",
+                    "columns": {
+                        "date": "The date for which hospital data were reported in ISO 8601 format.",
+                        "county": "The name of the county.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "positive_patients": "The current number confirmed coronavirus cases in hospitals on this date.",
+                        "suspected_patients": "The current number suspected coronavirus cases in hospitals on this date.",
+                        "icu_positive_patients": "The current number confirmed coronavirus cases in intensive-care units on this date.",
+                        "icu_suspected_patients": "The current number suspected coronavirus cases in intensive-care units on this date.",
+                        "icu_available_beds": "The current number open and avilable intensive-care beds on this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-hospital-patient-county-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-hospital-patient-state-totals": {
+                    "description_html": "<p>California's Department of Public Health is releasing <a href=\"https://data.chhs.ca.gov/dataset/california-covid-19-hospital-data-and-case-statistics\" rel=\"nofollow\">county-level hospitalization totals</a>. The file aggregates them statewide.</p>",
+                    "columns": {
+                        "date": "The date for which hospital data were reported in ISO 8601 format.",
+                        "positive_patients": "The current number confirmed coronavirus cases in hospitals on this date.",
+                        "suspected_patients": "The current number suspected coronavirus cases in hospitals on this date.",
+                        "icu_positive_patients": "The current number confirmed coronavirus cases in intensive-care units on this date.",
+                        "icu_suspected_patients": "The current number suspected coronavirus cases in intensive-care units on this date.",
+                        "icu_available_beds": "The current number open and avilable intensive-care beds on this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-hospital-patient-state-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-regional-stay-home-metrics": {
+                    "description_html": "<p>In December 2020, the state <a href=\"https://covid19.ca.gov/stay-home-except-for-essential-needs/\" rel=\"nofollow\">introduced a new system</a> for issuing stay home orders. The state's 58 counties were grouped into six regions and judged based on the percentage of available ICU beds. When the percentage available beds dropped below 15%, a stay home order restricting businesses and movement would be issued.</p>\n<p>This file records the metrics released for each region by day.</p>",
+                    "columns": {
+                        "date": "The date when the data were collected in ISO 8601 format.",
+                        "region": "The name of the region.",
+                        "icu_capacity_percent": "The percentage of ICU beds in the region that were available on that date\n",
+                        "stay_home_order": "An indicator of whether or not a stay home order was in effect for the region on that date. The range of values is pending, yes and no."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-regional-stay-home-metricscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "hhs-hospital-patient-totals": {
+                    "description_html": "<p>The Department of Health and Human Services releases a weekly update on the number of COVID-19 patients in hospitals. This file contains the key metrics for facilities in California.</p>",
+                    "columns": {
+                        "hospital": "The name of the hospital",
+                        "ccn": "The unique indentifier of the hospital.",
+                        "week": "The week for which hospital data were reported in ISO 8601 format.",
+                        "county": "The county where the hospitals is located.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "region": "The region of the state where the hospital is located.",
+                        "adult_covid_patients_total": "The daily average of adult COVID-19 patients at the hospital over the past seven days.",
+                        "pediatric_covid_patients_total": "The daily average of pediatric COVID-19 patients at the hospital over the past seven days.",
+                        "covid_patients_total": "The daily average of total COVID-19 patients at the hospital over the past seven days.",
+                        "occupied_beds_percent": "The daily average of occupied beds over the past seven days, measured as a percentage of the hospital's total.",
+                        "patients_with_covid_percent": "The daily average of beds occupied by COVID-19 patients over the past seven days, measured as a percentage of the hospital's total."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#hhs-hospital-patient-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "hhs-hospital-icu-totals": {
+                    "description_html": "<p>The Department of Health and Human Services releases a weekly update on the number of COVID-19 patients in intensive-care units. This file contains the key metrics for facilities in California.</p>",
+                    "columns": {
+                        "hospital": "The name of the hospital",
+                        "ccn": "The unique indentifier of the hospital.",
+                        "week": "The week for which hospital data were reported in ISO 8601 format.",
+                        "county": "The county where the hospitals is located.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "region": "The region of the state where the hospital is located.",
+                        "covid_icu_patients_total": "The daily average of COVID-19 patients in the adult ICU at the hospital over the past seven days.",
+                        "available_adult_icu_beds_total": "The daily average of available adult ICU beds at the hospital over the past seven days.",
+                        "occupied_adult_icu_beds_total": "The daily average of occupied adult ICU beds at the hospital over the past seven days.",
+                        "staffed_adult_icu_beds_total": "The daily average of staffed adult ICU beds at the hospital over the past seven days.",
+                        "occupied_adult_icu_beds_percent": "The daily average of occupied adult ICU beds over the past seven days, measured as a percentage of the hospital's total.",
+                        "icu_patients_with_covid_percent": "The daily average of of adult ICU patients with COVID-19 over the past seven days, measured as a percentage of the hospital's total."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#hhs-hospital-icu-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-adult-and-senior-care-facilities": {
+                    "description_html": "<p>California's Department of Public Health is <a href=\"https://www.cdss.ca.gov/#covid19\" rel=\"nofollow\">listing the residential care facilities for the elderly and adult residential facilities</a> across the state with COVID-19 outbreaks.</p>\n<p>These are also sometimes known as assisted-living facilities. In some circumstances the true total of cases is obscured. The lowest number in the range is entered into the record in the staff or patients field and an accompanying <code>note</code> field includes the set of possible values.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "name": "The name of the nursing home.",
+                        "county": "The name of the county where the city is located.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "staff_confirmed_cases": "The cumulative number of confirmed coronavirus case amoung staff at that time.",
+                        "patients_confirmed_cases": "The cumulative number of confirmed coronavirus case amoung patients at that time.",
+                        "staff_confirmed_cases_note": "In cases where the staff_confirmed_cases are obscured, this explains the range of possible values.",
+                        "patients_confirmed_cases_note": "In cases where the patients_confirmed_cases are obscured, this explains the range of possible values.",
+                        "staff_deaths": "The cumulative number of deaths amoung staff at that time.",
+                        "patients_deaths": "The cumulative number of deaths amoung patients at that time.",
+                        "staff_deaths_note": "In cases where the staff_deaths are obscured, this explains the range of possible values.",
+                        "patients_deaths_note": "In cases where the patients_deaths are obscured, this explains the range of possible values."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-adult-and-senior-care-facilitiescsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-adult-and-senior-care-totals": {
+                    "description_html": "<p>California's Department of Social Services is releasing totals tracking the cumulative number of cases and deaths at the state's residential care facilities for the elderly and adult residential facilities. The source documents are available in the <a href=\"pdf/adult-and-senior-care/\">pdf/adult-and-senior-care/</a> directory of this repository.</p>\n<p>These are also sometimes known as assisted-living facilities. Counts for staff and patients are combined in this dataset into a single total.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus case amoung staff and patients at that time.",
+                        "deaths": "The cumulative number of deaths case amoung staff and patients at that time.",
+                        "active_cases": "The number of active coronavirus case at that time.",
+                        "source_url": "The URL to the state data release."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-adult-and-senior-care-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-skilled-nursing-facilities": {
+                    "description_html": "<p>California's Department of Social Services is <a href=\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/SNFsCOVID_19.aspx\" rel=\"nofollow\">listing the skilled-nursing facilities</a> across the state with COVID-19 outbreaks. The source documents are available in the <a href=\"pdf/adult-and-senior-care/\">pdf/adult-and-senior-care/</a> directory of this repository.</p>\n<p>In some circumstances the true total of cases is obscured. The lowest number in the range is entered into the record in the staff or patients field and an accompanying <code>note</code> field includes the set of possible values.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "id": "The facility's unique identifier with the state.",
+                        "name": "The name of the skilled-nursing facility.",
+                        "county": "The name of the county where the city is located.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "staff_confirmed_cases": "The current number of confirmed coronavirus case amoung staff at that time.",
+                        "patients_confirmed_cases": "The current number of confirmed coronavirus case amoung patients at that time.",
+                        "staff_confirmed_cases_note": "In cases where the staff_confirmed_cases are obscured, this explains the range of possible values.",
+                        "patients_confirmed_cases_note": "In cases where the patients_confirmed_cases are obscured, this explains the range of possible values.",
+                        "staff_deaths": "The cumulative number of deaths case amoung staff at that time.",
+                        "patients_deaths": "The cumulative number of deaths case amoung patients at that time.",
+                        "staff_deaths_note": "In cases where the staff_deaths are obscured, this explains the range of possible values.",
+                        "patients_deaths_note": "In cases where the patients_deaths are obscured, this explains the range of possible values."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-skilled-nursing-facilitiescsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-skilled-nursing-totals": {
+                    "description_html": "<p>California's Department of Public Health is releasing totals tracking the cumulative number of cases and deaths at the state's skilled nursing facilities.</p>\n<p>In some circumstances the true total of cases is obscured. The lowest number in the range is entered into the record in the staff or patients field and an accompanying <code>note</code> field includes the set of possible values.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "staff_active_cases": "The number of active coronavirus case among staff at that time.",
+                        "patients_active_cases": "The number of active coronavirus case amoung patients at that time.",
+                        "staff_confirmed_cases": "The cumulative number of confirmed coronavirus case among staff at that time.",
+                        "patients_confirmed_cases": "The cumulative number of confirmed coronavirus case among patients at that time.",
+                        "staff_deaths": "The cumulative number of deaths case among staff at that time.",
+                        "patients_deaths": "The cumulative number of deaths case among patients at that time.",
+                        "staff_deaths_note": "In cases where the staff_deaths are obscured, this explains the range of possible values.",
+                        "source_url": "The URL to the state data release."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-skilled-nursing-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-nursing-home-county-totals": {
+                    "description_html": "<p>The total number of cases and deaths in skilled-nursing facilities, residential care facilities for the elderly and adult residential facilities aggregated by county.</p>\n<p>These numbers are calculated by The Times using the facilities lists above. The state chooses not to provide precise numbers at facilities with fewer than 10 cases. When totaling by county, The Times substitutes the minimum value of one. The result is that the tallies are likely an undercount and should be considered the minimum possible value.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "county": "The name of the county where the city is located.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "minimum_staff_confirmed_cases": "The minimum number of cumulative confirmed coronavirus case amoung staff at that time.",
+                        "minimum_patients_confirmed_cases": "The minimum number of cumulative confirmed coronavirus case amoung patients at that time.",
+                        "minimum_staff_deaths": "The minimum number of cumulative deaths amoung staff at that time.",
+                        "minimum_patients_deaths": "The minimum number of cumulative deaths amoung patients at that time."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-nursing-home-county-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdcr-prison-totals": {
+                    "description_html": "<p>The cases, resolutions and deaths among inmates at the individual prison facilities operated by the California Department of Corrections and Rehabilitation.</p>\n<p>The data is currently limited to July 22, 2020, forward.</p>",
+                    "columns": {
+                        "date": "The date when the data were collected in ISO 8601 format.",
+                        "code": "The unique identifier of the prison institution.",
+                        "name": "The name of the prison institution.",
+                        "city": "The city where the prison institution is located.",
+                        "county": "The county where the prison institution is located.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "zipcode": "The ZIP Code where the agency is located.",
+                        "x": "The longitude of the area's centroid.",
+                        "y": "The latitude of the area's centroid.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus case at that time.",
+                        "new_confirmed_cases": "The net change in confirmed cases over the previous date.",
+                        "deaths": "The cumulative number of deaths at that time.",
+                        "new_deaths": "The net change in deaths over the previous date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdcr-prison-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdcr-state-totals": {
+                    "description_html": "<p>The total number of cases amoung inmates at prisons run by the California Department of Corrections and Rehabiliation.</p>",
+                    "columns": {
+                        "date": "The date when the data were collected in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus case at that time.",
+                        "new_confirmed_cases": "The net change in confirmed cases over the previous date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdcr-state-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "charter-schools-reopening": {
+                    "description_html": "<p>Number of students with an option to return to individual charter schools calculated from combination of data from California Safe Schools For All and California Department of Education. This file stopped updating in June 2021.</p>",
+                    "columns": {
+                        "cdscode": "A 14-digit code unique to the charter school. Assigned by California department of Education",
+                        "district": "Name of school district the charter schools is part of.",
+                        "school": "Name of the charter school.",
+                        "enr_total": "Total students enrolled",
+                        "elem_enr": "Total students enrolled in grades K-5. Subset of enr_total.",
+                        "middle_enr": "Total students enrolled in grades 6-8. Subset of enr_total.",
+                        "high_enr": "Total students enrolled in grades 9-12. Subset of enr_total.",
+                        "elem_in_school": "Students in grades K-5 that have the option to participate in an in-person or hybrid learning.",
+                        "middle_in_school": "Students in grades 6-8 grades that have the option to participate in an in-person or hybrid learning.",
+                        "high_in_school": "Students in grades 9-12 grades that have the option to participate in an in-person or hybrid learning.",
+                        "total_in_school ": "Sum of elem_in_school,middle_in_school and high_in_school.",
+                        "reopening_plan": "Link to school's reopening plan.",
+                        "operational_status_elem": "Operational status as of update_date.",
+                        "operational_status_middle": "Operational status as of update_date.",
+                        "operational_status_high": "Operational status as of update_date.",
+                        "elem_reopening_date": "Planned reopening date as of update date.",
+                        "middle_reopening_date": "Planned reopening date as of update date.",
+                        "high_reopening_date": "Planned reopening date as of update date.",
+                        "near_term_opening_date": "Earliest planned reopening date for the school as of update date.",
+                        "update_date": "The date when the charter school submitted status report to the state."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#charter-schools-reopeningcsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "school-districts-reopening": {
+                    "description_html": "<p>Number of students with an option to return to school districts calculated from combination of data from California Safe Schools For All and California Department of Education. This file stopped updating in June 2021.</p>",
+                    "columns": {
+                        "district": "Name of public school district.",
+                        "enr_total": "Total students enrolled in the district.",
+                        "elem_enr": "Total students enrolled in grades K-5. Subset of enr_total.",
+                        "middle_enr": "Total students enrolled in grades 6-8. Subset of enr_total.",
+                        "high_enr": "Total students enrolled in grades 9-12. Subset of enr_total.",
+                        "elem_in_school": "Students in grades K-5 that have the option to participate in an in-person or hybrid learning.",
+                        "middle_in_school": "Students in grades 6-8 grades that have the option to participate in an in-person or hybrid learning.",
+                        "high_in_school": "Students in grades 9-12 grades that have the option to participate in an in-person or hybrid learning.",
+                        "total_in_school ": "Sum of elem_in_school,middle_in_school and high_in_school.",
+                        "reopening_plan": "Link to district's reopening plan.",
+                        "operational_status_elem": "Operational status as of update_date for the district's elementary schools.",
+                        "operational_status_middle": "Operational status as of update_date for the district's middle schools.",
+                        "operational_status_high": "Operational status as of update_date for the district's high schools.",
+                        "elem_reopening_date": "Planned reopening date for the district's elementary schools as of update date.",
+                        "middle_reopening_date": "Planned reopening date for the district's middle schools as of update date.",
+                        "high_reopening_date": "Planned reopening date for the district's high schools as of update date.",
+                        "near_term_opening_date": "Earliest planned reopening date for the district as of update date.",
+                        "update_date": "The date when the district submitted status report to the state."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#school-districts-reopeningcsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "lausd-cases": {
+                    "description_html": "<p>The number of coronavirus cases detected at L.A. Unified schools. Updates daily via a scraper that pulls from the district's dashboard.</p>",
+                    "columns": {
+                        "school": "The name of the school.",
+                        "status": "Whether the school is open or closed.",
+                        "staff_student": "The current number of active cases among staff and students.",
+                        "transmission": "The number of school-linked cases.",
+                        "staff_student_rate": "The seven-day average of active cases per 100,000 students in this school's community of schools.",
+                        "community_rate": "The seven-day average of active cases per 100,000 residents in the school's surrounding community.",
+                        "lac_rate": "The seven-day average of active cases per 100,000 residents in Los Angeles County.",
+                        "community_schools": "The name of the community of schools that this school belongs to.",
+                        "community": "The name of the community where the school is located within.",
+                        "date": "The last updated date listed on the district's dashboard.",
+                        "time": "The last updated time listed on the district's dashboard."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#lausd-casescsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-hpi-zipcodes": {
+                    "description_html": "<p>California's Department of Public Health has assigned each California ZIP Code a community health score by combining a variety of economic and social indicators. It is known as the Healthy Places Index. The quartile that each ZIP Code falls within was released in response to a request by The Times.</p>",
+                    "columns": {
+                        "id": "The unique identifer of the ZIP Code.",
+                        "hpi_quartile": "The ranked quartile that contains the ZIP Code\u2019s Healthy Places Index score. One is the lowest. Four is the highest.",
+                        "county": "The name of the county.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "city": "The city the ZIP Code falls within"
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-hpi-zipcodescsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-press-releases": {
+                    "description_html": "<p>Totals published by the California Department of Public Health in <a href=\"https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx\" rel=\"nofollow\">its daily press releases</a>. Each row contains all numbers included in that day's release.</p>\n<p>This file includes cases and deaths, the age of victims, transmission types, tests and hospitalizations. The state has stopped supplying some fields and began supplying some others over time. Deprecated fields have been maintained in this file and are noted below.</p>\n<p>The Times stopped entering data in August 2021. Some dates are missing because the state did not publish a press release for that day.</p>",
+                    "columns": {
+                        "date": "The date when the data were retrieved in ISO 8601 format.",
+                        "confirmed_cases": "The cumulative number of confirmed coronavirus case at that time.",
+                        "deaths": "The cumulative number of deaths at that time.",
+                        "travel": "The number of cases acquired while traveling. The state stopped publishing it on March 24.",
+                        "person_to_person": "The number of cases acquired from close contacts and family members. The state stopped publishing it on March 24.",
+                        "community_spread": "The number of cases acquired from community spread. The state stopped publishing it on March 29.",
+                        "under_investigation": "The number of cases acquired from an unknown source. The state stopped publishing it on March 24.",
+                        "other_causes": "The number of cases acquired from other sources. On March 24 the state began combining this figure with travel, person-to-person and under investigation cases. On March 29 the state stopped publishing it.",
+                        "self_monitoring": "The number of people in a form of isolation monitored by the state. The state stopped publishing it on March 19.",
+                        "age_0_to_17": "The number of confirmed cases involving a person between 0 and 18 years old.",
+                        "age_18_to_49": "The number of confirmed cases involving a person between 18 and 49 years old.",
+                        "age_50_to_64": "The number of confirmed cases involving a person between 50 and 64 years old.",
+                        "age_65_and_up": "The number of confirmed cases involving a person 65 of older.",
+                        "age_18_to_64": "The number of confirmed cases involving a person between 18 and 64 years old. The state stopped publishing it on March 23.",
+                        "age_unknown": "The number of confirmed cases involving a person of unknown age.",
+                        "gender_male": "The number of confirmed cases involving a male.",
+                        "gender_female": "The number of confirmed cases involving a female.",
+                        "gender_unknown": "The number of confirmed cases involving a a person of unknown gender.",
+                        "total_tests": "The total number of tests conducted.",
+                        "received_tests": "The number of tests results received. The state stopped publishing this field in April 24.",
+                        "pending_tests": "The number of tests resuts that are still pending. The state stopped publishing this field in April 24.",
+                        "confirmed_hospitalizations": "The total number of hospitalizations with a confirmed case of COVID-19.",
+                        "confirmed_icu": "The number of ICU hospitalizations with a confirmed case of COVID-19.",
+                        "suspected_hospitalizations": "The total number of hospitalizations with a suspected case of COVID-19.",
+                        "suspected_icu": "The number of ICU hospitalizations with a suspected case of COVID-19.",
+                        "healthcare_worker_infections": "The total number of healthcare workers who have tested positive for COVID-19.",
+                        "healthcare_worker_deaths": "The total number of healthcare workers who have died from COVID-19.",
+                        "vaccine_doses_administered": "The total number of vaccine doses given out.",
+                        "vaccine_doses_distributed": "The total number of vaccine doses available in the state.",
+                        "source_url": "The URL to the state press release."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-press-releasescsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-reopening-metrics": {
+                    "description_html": "<p>In August 2020, the state introduced a new framework for deciding when and how counties can reopen. Under the regime, each county is assigned to one of four tiers based on a set of metrics developed by state officials.</p>\n<p>This file records the metrics released for each county by day. Definition of the benchmarks can be found on the <a href=\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyMonitoringOverview.aspx\" rel=\"nofollow\">state's website</a>.</p>",
+                    "columns": {
+                        "date": "The date when the data were collected in ISO 8601 format.",
+                        "county": "The name of the county.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "percapita_case_rate": "The number of new cases in a recent seven-day period \u2014 excluding cases at prisons and jails \u2014 adjusted for population and multiplied by 100,000.",
+                        "adjusted_case_rate": "The percapita_case_rate adjusted to account for the volume of testing in the area. Not done for all counties.",
+                        "positivity_rate": "The percentage of tests for the virus that come back positive in a recent seven-day period.",
+                        "equity_metric": "An index measuring disparities in disadvantaged neighborhoods compared to the county overall. Many small counties are exempted. Added Oct. 6, 2020"
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-reopening-metricscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "cdph-reopening-tiers": {
+                    "description_html": "<p>In August 2020, the state introduced a new framework for deciding when and how counties can reopen. Under the regime, each county is assigned to one of four tiers based on a set of metrics developed by state officials.</p>\n<p>This file records the current tier of each county by day. The definition for each group can be found on the <a href=\"https://web.archive.org/web/20200829140027/https://covid19.ca.gov/safer-economy/\" rel=\"nofollow\">state's website</a>.</p>",
+                    "columns": {
+                        "date": "The date when the data were collected in ISO 8601 format.",
+                        "county": "The name of the county.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "tier": "The tier the county was classified in on this date. There are four possible values on an ordinal scale with one being the most restrictive and four the least restrictive."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#cdph-reopening-tierscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-agency-websites": {
+                    "description_html": "<p>The 61 local-health agency websites that the Los Angeles Times consults to conduct its survey.</p>",
+                    "columns": {
+                        "county": "The name of the county where the city is located.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "agency": "The name of the county or city public health agency.",
+                        "url": "The location of the agency's website on the World Wide Web."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-agency-websitescsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-beach-closures-area-list": {
+                    "description_html": "<p>The subcounty-level restrictions on beach access, compiled by the Los Angeles Times based on data released by the California Coastal Commission.</p>",
+                    "columns": {
+                        "county": "The name of the county where the agency is based.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "area": "The name of the sub-county area being tracked.",
+                        "state_park": "An indicator if this area is a state park.",
+                        "restriction": "A description of the current level of restriction in this area."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-beach-closures-area-listcsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-beach-closures-county-list": {
+                    "description_html": "<p>The county-level restrictions on beach access, compiled by the Los Angeles Times based on data released by the California Coastal Commission.</p>",
+                    "columns": {
+                        "county": "The name of the county where the agency is based.",
+                        "fips": "The FIPS code given to the county by the federal government. Can be used to merge with other data sources.",
+                        "status": "A Times classification of the current level of restriction in this county",
+                        "restriction": "A description of the current level of restriction in this county"
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-beach-closures-county-listcsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
+                },
+                "latimes-project-roomkey-totals": {
+                    "description_html": "<p>Los Angeles County officials have launched an unprecedented effort to shield 15,000 homeless people from the coronavirus by moving them into hotel rooms. The Times is tracking the latest data from the Los Angeles County Emergency Operations Center and the Los Angeles County Department of Public Health.</p>",
+                    "columns": {
+                        "date": "The date on which data were reported in ISO 8601 format.",
+                        "people_housed": "The current number of homeless people in Los Angeles County housed on this date.",
+                        "leased_rooms": "The current number hotel rooms leased on this date.",
+                        "rooms_ready_to_occupy": "The subset of leased rooms that were ready to occupy on this date.",
+                        "rooms_occupied": "The subset of ready rooms that were occupied on this date.",
+                        "homeless_confirmed_cases": "The cumulative number of homeless people in Los Angeles County that had tested positive by this date."
+                    },
+                    "source": "LA Times California coronavirus data",
+                    "source_url": "https://github.com/datadesk/california-coronavirus-data",
+                    "about": "README",
+                    "about_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#latimes-project-roomkey-totalscsv",
+                    "license": "Reusing the data",
+                    "license_url": "https://github.com/datadesk/california-coronavirus-data/blob/master/README.md#reusing-the-data"
                 }
             }
         }

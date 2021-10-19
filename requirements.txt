@@ -5,3 +5,6 @@ datasette-graphql
 datasette-atom
 datasette-yaml
 datasette-export-notebook
+bs4
+html5lib
+httpx

@@ -51,6 +51,10 @@ jobs:
         pip install -r requirements.txt
     - name: Build covid.db database
       run: python build_database.py
+    - name: Build la-times.db database and generate metadata
+      run: |-
+        ./build-la-times.sh
+        python build_la_times_metadata.py
     - name: Set variables to decide if we should deploy
       id: decide_variables
       run: |-
@@ -68,7 +72,7 @@ jobs:
       run: |-
         gcloud config set run/region us-central1
         gcloud config set project datasette-222320
-        datasette publish cloudrun covid.db \
+        datasette publish cloudrun covid.db la-times.db \
           --service covid-19 \
           -m metadata.json \
           --branch main \
