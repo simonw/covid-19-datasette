@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '5 * * * *'
+    - cron: '5 0/12 * * *'
 
 jobs:
   scheduled:
@@ -55,20 +55,13 @@ jobs:
       run: |-
         ./build-la-times.sh
         python build_la_times_metadata.py
-    - name: Set variables to decide if we should deploy
-      id: decide_variables
-      run: |-
-        echo "##[set-output name=latest;]$(datasette inspect covid.db | jq '.covid.hash' -r)"
-        echo "##[set-output name=deployed;]$(curl -s https://covid-19.datasettes.com/-/databases.json | jq '.[0].hash' -r)"
     - name: Set up Cloud Run
-      if: github.event_name == 'workflow_dispatch' || steps.decide_variables.outputs.latest != steps.decide_variables.outputs.deployed
       uses: google-github-actions/setup-gcloud@master
       with:
         version: '275.0.0'
         service_account_email: ${{ secrets.GCP_SA_EMAIL }}
         service_account_key: ${{ secrets.GCP_SA_KEY }}
     - name: Deploy to Cloud Run
-      if: github.event_name == 'workflow_dispatch' || steps.decide_variables.outputs.latest != steps.decide_variables.outputs.deployed
       run: |-
         gcloud config set run/region us-central1
         gcloud config set project datasette-222320
@@ -76,7 +69,7 @@ jobs:
           --service covid-19 \
           -m metadata.json \
           --branch main \
-          --memory 2Gi \
+          --memory 4Gi \
           --install=datasette-vega \
           --install=datasette-copyable \
           --install=datasette-graphql \
