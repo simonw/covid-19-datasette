@@ -76,4 +76,4 @@ jobs:
           --install=datasette-yaml \
           --install=datasette-atom \
           --install=datasette-export-notebook>=0.3 \
-          --extra-options="--config facet_time_limit_ms:3000 --config sql_time_limit_ms:3000"
+          --extra-options="--setting facet_time_limit_ms 3000 --setting sql_time_limit_ms 3000 --setting trace_debug 1"
