@@ -68,7 +68,6 @@ jobs:
         datasette publish cloudrun covid.db la-times.db \
           --service covid-19 \
           -m metadata.json \
-          --branch main \
           --memory 4Gi \
           --install=datasette-vega \
           --install=datasette-copyable \
